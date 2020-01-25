@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+}
+
+nav,
+footer {
+  background-color: #999999;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.row {
+  max-width: 100%;
+}
+
+nav .row {
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+nav .main-nav a {
+  color: white;
+}
+
+nav .main-nav a:hover {
+  text-decoration: underline;
+  color: #AF1B1B;
+}
+
+.container {
+  min-height: 91vh;
+}
+
+.main-featured {
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.main-featured .column {
+  background-color: #575757;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+

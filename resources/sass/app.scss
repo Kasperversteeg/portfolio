@@ -1,1 +1,67 @@
-//
+// presets
+$primary-color: #AF1B1B;
+$secondary-color: #575757;
+$third-color: #999999;
+
+
+// html tags
+body {
+	margin:0px;
+}
+nav, footer {
+	background-color: $third-color;
+}
+ul li {
+	display: inline-block;
+}
+.row {
+	max-width: 100%;
+}
+
+
+// nav css
+nav {
+	.row {
+		justify-content: space-between;
+	}
+	.main-nav {
+
+		a {
+			color: white;
+		}
+	}
+	.main-nav a:hover {
+		text-decoration:underline;
+		color: $primary-color;
+	}
+}
+
+
+
+// home page css
+
+.container{
+
+	min-height: 91vh;
+}
+// main page portfolio items
+.main-featured{
+	justify-content: space-between;
+
+	 .column{
+	background-color: $secondary-color;
+	}
+}
+
+
+
+// footer css
+
+footer { 
+	p {
+		margin-bottom: 0px;
+	}
+}
+
+
+

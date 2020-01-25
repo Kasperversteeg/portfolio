@@ -1,0 +1,314 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"marig",
+				"margin-bottom\tproperty"
+			],
+			[
+				"age",
+				"age"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mys",
+				"mysql_connect"
+			],
+			[
+				"db",
+				"dbName"
+			],
+			[
+				"retur",
+				"returnFalseChars"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"mail",
+				"mailError"
+			],
+			[
+				"filter",
+				"filter_var"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/kaspe/Documents/projects/portfolio",
+		"/C/Users/kaspe/Documents/projects/portfolio/public",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/js",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views",
+		"/C/Users/kaspe/Documents/projects/portfolio/routes"
+	],
+	"file_history":
+	[
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/home.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/master.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/app.scss",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/nav.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/routes/web.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/node_modules/postcss/lib/vendor.js",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/js/app.js",
+		"/C/Users/kaspe/Documents/projects/portfolio/webpack.mix.js",
+		"/C/Users/kaspe/Documents/projects/portfolio/public/css/app.css",
+		"/C/Users/kaspe/package-lock.json",
+		"/C/Users/kaspe/package.json",
+		"/C/Users/kaspe/Documents/projects/portfolio/public/index.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/footer.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/welcome.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/package.json",
+		"/C/Users/kaspe/Documents/projects/portfolio/package-lock.json",
+		"/C/Users/kaspe/Documents/projects/portfolio/.gitignore",
+		"/C/Users/kaspe/Documents/projects/portfolio/.git/COMMIT_EDITMSG",
+		"/C/Users/kaspe/Desktop/v12 - final/cur-overzicht.html",
+		"/C/Users/kaspe/Desktop/v12 - final/index.html",
+		"/C/Users/kaspe/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/kaspe/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/kaspe/Documents/My Games/Path of Exile/NeverSink's filter - 2-SEMI-STRICT (Blue) .filter",
+		"/C/Users/kaspe/Desktop/v12 - final/css/style.css",
+		"/C/Users/kaspe/Desktop/v11 - final/css/opleiding.css",
+		"/C/Users/kaspe/Desktop/v11 - final/css/results.css",
+		"/C/Users/kaspe/Desktop/v11 - final/opleiding.html",
+		"/C/Users/kaspe/Desktop/v11 - final/css/cursus.css",
+		"/C/Users/kaspe/Desktop/v11 - final/results.html",
+		"/C/Users/kaspe/Desktop/v11 - final/cursus.html",
+		"/C/Users/kaspe/Desktop/v11 - final/studietest.html",
+		"/C/Users/kaspe/Desktop/v11 - final/css/style.css",
+		"/C/Users/kaspe/Desktop/v11 - final/index.html",
+		"/C/Users/kaspe/Desktop/v11 - final/css/header.css",
+		"/C/Users/kaspe/Desktop/v10/index.html",
+		"/C/Users/kaspe/Desktop/v10/opl-overzicht.html",
+		"/C/Users/kaspe/Desktop/v10/results.html",
+		"/C/Users/kaspe/Desktop/v10/studiehulp.html",
+		"/C/Users/kaspe/Desktop/v10/css/header.css",
+		"/C/Users/kaspe/Desktop/v10/cur-overzicht.html",
+		"/C/Users/kaspe/Desktop/v10/studietest.html",
+		"/C/Users/kaspe/Desktop/v10/cursus.html",
+		"/C/Users/kaspe/Desktop/v10/opleiding.html",
+		"/C/Users/kaspe/Desktop/v10/css/opleiding.css",
+		"/C/Users/kaspe/Desktop/v10/css/style.css",
+		"/C/Users/kaspe/Desktop/v10/css/results.css",
+		"/C/Users/kaspe/Desktop/v10/css/hulp.css",
+		"/C/Users/kaspe/Desktop/v10/css/list.css",
+		"/C/Users/kaspe/Desktop/v10/css/cursus.css",
+		"/C/Users/kaspe/Documents/My Games/Path of Exile/NeverSink's filter - 3-STRICT (Blue) .filter",
+		"/C/Users/kaspe/Documents/School/skill/form2.0.php",
+		"/C/wamp64/www/skill/form.php",
+		"/C/wamp64/www/skill/form - kopie.php",
+		"/C/wamp64/logs/mysql.log",
+		"/C/wamp64/bin/mysql/mysql5.7.26/my.ini",
+		"/C/wamp64/www/skill/phpform.php",
+		"/C/Users/kaspe/Documents/School/test.php",
+		"/C/Users/kaspe/Documents/My Games/Path of Exile/NeverSink's filter - 5-UBER-STRICT (Velvet) .filter",
+		"/C/Users/kaspe/Documents/My Games/Path of Exile/NeverSink's filter - 4-VERY-STRICT (Velvet) .filter",
+		"/C/Users/kaspe/Documents/My Games/Path of Exile/NeverSink's filter - 5-UBER-STRICT (Blue) .filter"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "portfolio.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vendor",
+				"node_modules\\postcss\\lib\\vendor.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
