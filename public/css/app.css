@@ -20,6 +20,11 @@ nav .row {
           justify-content: space-between;
 }
 
+nav .main-nav .active {
+  font-weight: bold;
+  color: #AF1B1B;
+}
+
 nav .main-nav a {
   color: white;
 }
@@ -27,10 +32,6 @@ nav .main-nav a {
 nav .main-nav a:hover {
   text-decoration: underline;
   color: #AF1B1B;
-}
-
-.container {
-  min-height: 91vh;
 }
 
 .main-featured {

@@ -25,14 +25,19 @@ nav {
 		justify-content: space-between;
 	}
 	.main-nav {
-
+	
+		// active page -- t
+		.active {
+			font-weight: bold;
+			color: $primary-color;
+		}
 		a {
 			color: white;
 		}
-	}
-	.main-nav a:hover {
-		text-decoration:underline;
-		color: $primary-color;
+		a:hover {
+			text-decoration:underline;
+			color: $primary-color;
+		}
 	}
 }
 
@@ -40,10 +45,6 @@ nav {
 
 // home page css
 
-.container{
-
-	min-height: 91vh;
-}
 // main page portfolio items
 .main-featured{
 	justify-content: space-between;

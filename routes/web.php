@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('portfolio', function () {
+    return view('portfolio');
+});
+
+Route::get('service', function () {
+    return view('service');
+});
+
+Route::get('overmij', function () {
+    return view('overmij');
+});
