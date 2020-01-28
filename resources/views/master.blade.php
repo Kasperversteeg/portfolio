@@ -31,7 +31,7 @@
 	</nav>
 
 	{{-- main container --}}
-	<div class="container">
+	<div class="container main-content">
 		{{-- insert page content --}}
 		@yield('content')
 	</div>
@@ -39,7 +39,33 @@
 
 	{{-- footert --}}
 	<footer>
-		<p>test</p>
+		<div class="container">
+			<div class="row foot-content">
+				<div class="column">
+					<p>kleine versie logo</p>
+					<p>Kasper Versteeg</p>
+					<p>Webdeveloper</p>
+				</div>
+				<div class="column">		
+					<ul>
+						<li>Huur me in</li>
+						<li><span>Tel:</span><a href="">+31 6 11 11 99 44</a></li>
+						<li><span>Mail:</span><a href="mailto:kasperversteeg@gmail.com">kasperversteeg@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<ul>
+						<li>Socials</li>
+						<li>Github</li>
+						<li>Linked in</li>
+						<li>Facebook</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-copy">
+				<p>copyright © kasperversteeg - powered bij laravel etc etc</p>
+			</div>
+		</div>
 	</footer>
 
 
