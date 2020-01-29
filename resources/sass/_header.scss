@@ -1,0 +1,43 @@
+// import all custom variables and mixins
+@import '_variables.scss';
+
+
+
+// nav css
+nav {
+	// border-bottom: 0.25px solid $prim-color;
+	-webkit-box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
+    -moz-box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
+    box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
+
+	.row {
+	}
+	.main-nav {
+		// active page --
+		.active { 
+			border-bottom: 4px solid $prim-color;
+		}
+
+		a{
+			align-self: flex-end;
+			font-weight:bold;
+			display: inline-block;
+			color: $prim-color;
+			padding: 1.5rem;}
+		ul{
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+			cursor: pointer;
+		}
+		ul li{
+			display: inline-block;
+			margin:0 1rem;
+			border-bottom: 4px solid transparent;
+		}
+		ul li:hover{
+			border-bottom: 4px solid $prim-color;
+		}
+	}
+}

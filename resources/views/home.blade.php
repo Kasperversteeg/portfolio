@@ -6,12 +6,7 @@
 
 {{-- main content --}}
 @section('content')
-
-
-	<div class="main-content-section">
-		<div class="row">
-			<h1>Huur mij in!</h1>
-		</div>
+	<div class="content-section">
 		<div class="row">
 			<div class="column column-80">
 				<p>Welkom op de website, Ik ben <a class="a-inline" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
@@ -30,24 +25,41 @@
 	<div class="row divider"></div>
 
 	{{-- featured portfolio items --}}
-	<div class="main-content-section">
+	<div class="content-section">
 		<div class="row">
 			<h2>Recente projecten</h2>
 		</div>
+		<div class="row">
+			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
+		</div>
 		<div class="row main-featured">
 			<div class="column column-25">
-				<img src="{{asset('img/port-1.png')}}">
-			</div>
-			<div class="column column-40">
-				<img src="{{asset('img/port-1.png')}}">
+				<div class="featured-img-wrap">
+					<img src="{{asset('img/port-1.png')}}"></div>
+				<div class="featured-content">
+					<h5>Pride and joy labradoodles</h5>
+					<p>Description <br />
+					multiline</p>
+				</div>
 			</div>
 			<div class="column column-25">
-				<img src="{{asset('img/port-2.png')}}">
+				<div class="featured-img-wrap">
+					<img src="{{asset('img/port-1.png')}}"></div>
+				<div class="featured-content">
+					<h5>Portfolio</h5>
+				</div>
+			</div>
+			<div class="column column-25">
+				<div class="featured-img-wrap">
+					<img src="{{asset('img/port-2.png')}}"></div>
+				<div class="featured-content">
+					<h5>Peluche labradoodles</h5>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="main-content-section">
+	<div class="content-section">
 		<div class="row main-versions main-content-section">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

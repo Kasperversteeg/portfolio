@@ -1,0 +1,27 @@
+// import all custom variables and mixins
+@import '_variables.scss';
+
+
+// footer css
+footer { 
+	background-color: $prim-color;
+	border-top: 0.25px solid $sec-color;;
+	min-height:150px;
+	color: #fff;
+	ul{
+		list-style: none; 
+	}
+	.container{
+	 	.row{
+			padding: 2rem 0 0 0;
+	 	}
+	 }
+	p {
+		margin-bottom: 0px;
+	}
+	.footer-copy{
+		justify-content: center;
+	}
+}
+
+

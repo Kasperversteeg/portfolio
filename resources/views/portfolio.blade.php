@@ -2,23 +2,35 @@
 @extends('master')
 
 {{-- insert title --}}
-@section('title', 'Portfolio')
+@section('title', 'Home')
 
 {{-- main content --}}
 @section('content')
 
-	<div class="main-intro">
+	<div class="main-content-section">
 		<div class="row">
-			<h1>Portfolio</h1>
+			<h1>Projects</h1>
 		</div>
-		<div class="row">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\
+		<div class="row port-row">
+			<div class="column column-20 port-item">1</div>
+			<div class="column column-20 port-item">2</div>
+			<div class="column column-20 port-item">3</div>
+			<div class="column column-20 port-item">4</div>
+		</div>
+		<div class="row port-row">
+			<div class="column column-20 port-item">5</div>
+			<div class="column column-20 port-item">6</div>
+			<div class="column column-20 port-item">7</div>
+			<div class="column column-20 port-item">8</div>
+		</div>
+		<div class="row port-row">
+			<div class="column column-20 port-item">5</div>
+			<div class="column column-20 port-item">6</div>
+			<div class="column column-20 port-item">7</div>
+			<div class="column column-20 port-item">8</div>
 		</div>
 	</div>
+
+
 
 @endsection
