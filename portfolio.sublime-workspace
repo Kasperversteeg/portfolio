@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"tex",
+				"text-decoration\tproperty"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"inn",
+				"innerHtml"
+			],
+			[
+				"hover",
+				"hoverClass"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"class",
+				"classname"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"cone",
+				"console"
+			],
+			[
+				"g",
+				"getElementByClassName"
+			],
+			[
 				"flex-",
 				"flex-direction\tproperty"
 			],
@@ -153,30 +201,29 @@
 	"expanded_folders":
 	[
 		"/C/Users/kaspe/Documents/projects/portfolio",
-		"/C/Users/kaspe/Documents/projects/portfolio/bootstrap",
-		"/C/Users/kaspe/Documents/projects/portfolio/public",
-		"/C/Users/kaspe/Documents/projects/portfolio/public/img",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/js",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/views",
-		"/C/Users/kaspe/Documents/projects/portfolio/routes"
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views"
 	],
 	"file_history":
 	[
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/home.blade.php",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/portfolio.blade.php",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/overmij.blade.php",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/_header.scss",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/master.blade.php",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/_components.scss",
-		"/C/Users/kaspe/Documents/projects/portfolio/public/milligram.css",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/_variables.scss",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/overmij.blade.php",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/pages.scss",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/home.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/master.blade.php",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/_footer.scss",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/js/app.js",
-		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/app.scss",
+		"/C/Users/kaspe/Documents/projects/portfolio/app/Providers/AppServiceProvider.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/public/img/pictograms/001-facebook.svg",
+		"/C/Users/kaspe/Documents/projects/portfolio/public/img/pictograms/github-image.svg",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/_header.scss",
 		"/C/Users/kaspe/Desktop/v12 - final/css/style.css",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/app.scss",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/portfolio.blade.php",
+		"/C/Users/kaspe/Documents/projects/portfolio/public/milligram.css",
+		"/C/Users/kaspe/Documents/projects/portfolio/resources/sass/_variables.scss",
 		"/C/Users/kaspe/Documents/projects/portfolio/routes/web.php",
 		"/C/Users/kaspe/Documents/projects/portfolio/webpack.mix.js",
 		"/C/Users/kaspe/Documents/projects/portfolio/resources/views/service.blade.php",
@@ -237,13 +284,14 @@
 	],
 	"find":
 	{
-		"height": 90.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
 		"height": 226.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -251,6 +299,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h5",
+			"><",
+			"h5",
+			"}\t",
 			"h1",
 			">\n",
 			"div class=\"row main-featured\">\n\t\t\t<div class=\"column column-25\">\n\t\t\t\t<div class=\"featured-img-wrap\">\n\t\t\t\t\t<img src=\"{{asset('img/port-1.png')}}\"></div>\n\t\t\t\t<div class=\"featured-content\">\n\t\t\t\t\t<h5>Pride and joy labradoodles</h5>\n\t\t\t\t\t<p>Description <br />\n\t\t\t\t\tmultiline</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"column column-40\">\n\t\t\t\t<div class=\"featured-img-wrap\">\n\t\t\t\t\t<img src=\"{{asset('img/port-1.png')}}\"></div>\n\t\t\t\t<div class=\"featured-content\">\n\t\t\t\t\t<h5>Portfolio</h5>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"column column-25\">\n\t\t\t\t<div class=\"featured-img-wrap\">\n\t\t\t\t\t<img src=\"{{asset('img/port-2.png')}}\"></div>\n\t\t\t\t<div class=\"featured-content\">\n\t\t\t\t\t<h5>Peluche labradoodles</h5>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>",
@@ -267,7 +319,7 @@
 		[
 			"h3"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -283,7 +335,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 38.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -328,7 +380,7 @@
 	"project": "portfolio.sublime-project",
 	"replace":
 	{
-		"height": 172.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -374,7 +426,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 278.0,
+	"side_bar_width": 218.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

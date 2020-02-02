@@ -3,8 +3,9 @@
 <head>
 	{{-- milligram --}}
 	<link rel="stylesheet" type="text/css" href="{{asset('milligram.css')}}">
-	{{-- font --}}
+	{{-- fonts --}}
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	{{-- custom files --}}
 	<link rel="stylesheet" href="css/app.css">
 	<script type="text/javascript" src="js/app.js"></script>
@@ -49,24 +50,24 @@
 					<p>Kasper Versteeg</p>
 					<p>Webdeveloper</p>
 				</div>
-				<div class="column">		
+				<div class="column foot-contact">
+					<h5>Contact:</h5>		
 					<ul>
-						<li>Huur me in</li>
-						<li><span>Tel:</span><a href="">+31 6 11 11 99 44</a></li>
-						<li><span>Mail:</span><a href="mailto:kasperversteeg@gmail.com">kasperversteeg@gmail.com</a></li>
+						<li class="foot-pict"><a href="tel:+31611119944"><span>@svg('img/pictograms/pict-tel.svg', 'telefoon')</span>+31 6 11 11 99 44</a></li>
+						<li class="foot-pict"><a href="mailto:kasperversteeg@gmail.com"><span>@svg('img/pictograms/pict-mail.svg', 'e-mail')</span>kasperversteeg@gmail.com</a></li>
 					</ul>
 				</div>
-				<div class="column">
+				<div class="column foot-socials">
+					<h5>Socials:</h5>
 					<ul>
-						<li>Socials</li>
-						<li>Github</li>
-						<li>Linked in</li>
-						<li>Facebook</li>
+						<li class="foot-pict"><a href="https://www.facebook.com/kasper.versteeg.1">@svg('img/pictograms/pict-fb.svg', 'Facebook')</a></li>
+						<li class="foot-pict"><a href="https://www.linkedin.com/in/kasper-versteeg-97419051">@svg('img/pictograms/pict-li.svg', 'LinkedIn')</a></li>
+						<li class="foot-pict"><a href="https://github.com/Kasperversteeg">@svg('img/pictograms/pict-gh.svg', 'GitHub')</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row footer-copy">
-				<p>copyright © kasperversteeg - powered bij laravel etc etc</p>
+				<p>copyright © KasperVersteeg - powered bij <a href="https://laravel.com/">laravel</a></p>
 			</div>
 		</div>
 	</footer>

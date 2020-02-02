@@ -19,16 +19,15 @@ nav {
 		}
 
 		a{
-			align-self: flex-end;
 			font-weight:bold;
 			display: inline-block;
 			color: $prim-color;
-			padding: 1.5rem;}
+			padding: 1.5rem;
+		}
 		ul{
-
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
 			cursor: pointer;
 		}
 		ul li{
@@ -38,6 +37,7 @@ nav {
 		}
 		ul li:hover{
 			border-bottom: 4px solid $prim-color;
+		 	transition: ease-in-out 0.2s;
 		}
 	}
 }

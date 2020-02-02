@@ -8,6 +8,7 @@ footer {
 	border-top: 0.25px solid $sec-color;;
 	min-height:150px;
 	color: #fff;
+
 	ul{
 		list-style: none; 
 	}
@@ -19,8 +20,55 @@ footer {
 	p {
 		margin-bottom: 0px;
 	}
+	.foot-contact{
+		.foot-pict{
+			a{
+				color: #fff;
+				span{
+					padding-right: 2rem;
+				}
+			}
+			svg{
+				height:20px;
+				width:20px;
+				fill:#fff;
+			}
+			&:hover {
+				svg{
+					fill:$third-color;
+					transition: 0.2s;
+				}
+				a{
+					transition: 0.2s;
+					text-decoration: underline;
+					color:$third-color;
+				}
+			}
+		}
+	}
+	.foot-socials{
+		li {
+			display: inline-block;
+			padding:0.4rem;
+		}
+		.foot-pict{
+			svg{
+				height:30px;
+				width:30px;
+				fill:#fff;
+			}
+			svg:hover{
+				fill:$third-color;
+				transition: 0.2s;
+			}
+		}
+	}
 	.footer-copy{
 		justify-content: center;
+		a {
+			display: inline-block;
+			color:#fff;
+		}
 	}
 }
 

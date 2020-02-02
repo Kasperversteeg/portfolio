@@ -7,6 +7,9 @@
 {{-- main content --}}
 @section('content')
 	<div class="content-section">
+		<div class="row home-header">
+			<h2>< <span>Webdeveloper </span>/<span> Multimedia expert </span>></h2>
+		</div>
 		<div class="row">
 			<div class="column column-80">
 				<p>Welkom op de website, Ik ben <a class="a-inline" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
@@ -15,7 +18,7 @@
 			<div class="column column-20 main-cta">
 				<div>
 					<p></p>
-					<a class="button" href="">Button</a>
+					<a class="button" href="">Mail mij</a>
 				</div>
 			</div>
 			
@@ -32,28 +35,41 @@
 		<div class="row">
 			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
 		</div>
-		<div class="row main-featured">
-			<div class="column column-25">
-				<div class="featured-img-wrap">
-					<img src="{{asset('img/port-1.png')}}"></div>
-				<div class="featured-content">
-					<h5>Pride and joy labradoodles</h5>
-					<p>Description <br />
-					multiline</p>
+		<div class="row main-featured portfolio">
+			<div class="column column-20">
+				<div class="has-hover">
+					<div class="featured-img-wrap">
+						<img src="{{asset('img/port-1.png')}}"></div>
+					<div class="featured-content">
+						<h3>Kasper Versteeg</h3>
+					</div>
 				</div>
 			</div>
-			<div class="column column-25">
-				<div class="featured-img-wrap">
-					<img src="{{asset('img/port-1.png')}}"></div>
-				<div class="featured-content">
-					<h5>Portfolio</h5>
+			<div class="column column-20">
+				<div class="has-hover">
+					<div class="featured-img-wrap">
+						<img src="{{asset('img/port-2.png')}}"></div>
+					<div class="featured-content">
+						<h3>Peluche</h3>
+					</div>
 				</div>
 			</div>
-			<div class="column column-25">
-				<div class="featured-img-wrap">
-					<img src="{{asset('img/port-2.png')}}"></div>
-				<div class="featured-content">
-					<h5>Peluche labradoodles</h5>
+			<div class="column column-20">
+				<div class="has-hover">
+					<div class="featured-img-wrap">
+						<img src="{{asset('img/port-1.png')}}"></div>
+					<div class="featured-content">
+						<h3>Pride and joy labradoodles</h3>
+					</div>
+				</div>
+			</div>
+			<div class="column column-20">
+				<div class="has-hover">
+					<div class="featured-img-wrap">
+						<img src="{{asset('img/port-1.png')}}"></div>
+					<div class="featured-content">
+						<h3>Bernerdoodles</h3>
+					</div>
 				</div>
 			</div>
 		</div>
