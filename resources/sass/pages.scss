@@ -66,20 +66,35 @@
 	justify-content: space-between;
 	padding: 2rem 0;
 	.port-item{
-		height:200px;
-		background-color: $prim-color;
+		cursor: pointer;
+		border:1px solid $prim-color;
+		max-height:200px;
+		.featured-img-wrap{
+			height:100%;
+			width: 100%;
+			overflow: hidden;
+			padding:1rem;
+			img{
+				height: 99%;
+				max-width: none;
+			}
+		}
 	}
 }
 
 
-
-
-
-// overmij page-
+// overmij page
 .info-contact{
 	justify-content: center;
 }
-
+.info-skill{
+	padding-bottom: 2rem;
+	.column-33 {
+		display:flex;
+		justify-content: center;	
+		}
+	}
+	
 .skills {
 	ul {
 		list-style: none;
@@ -108,8 +123,8 @@
 					padding-left:2rem;
 				}
 				svg{
-				height:50px;
-				width:50px;
+				height:30px;
+				width:30px;
 				fill:$prim-color;
 				}
 				&:hover svg{

@@ -39,7 +39,8 @@
 			<div class="column column-20">
 				<div class="has-hover">
 					<div class="featured-img-wrap">
-						<img src="{{asset('img/port-1.png')}}"></div>
+						<img src="{{asset('img/port-1.png')}}">
+					</div>
 					<div class="featured-content">
 						<h3>Kasper Versteeg</h3>
 					</div>

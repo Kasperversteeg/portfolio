@@ -12,22 +12,26 @@
 			<h1>Projects</h1>
 		</div>
 		<div class="row port-row">
-			<div class="column column-20 port-item">1</div>
-			<div class="column column-20 port-item">2</div>
-			<div class="column column-20 port-item">3</div>
-			<div class="column column-20 port-item">4</div>
-		</div>
-		<div class="row port-row">
-			<div class="column column-20 port-item">5</div>
-			<div class="column column-20 port-item">6</div>
-			<div class="column column-20 port-item">7</div>
-			<div class="column column-20 port-item">8</div>
-		</div>
-		<div class="row port-row">
-			<div class="column column-20 port-item">5</div>
-			<div class="column column-20 port-item">6</div>
-			<div class="column column-20 port-item">7</div>
-			<div class="column column-20 port-item">8</div>
+			<div class="column column-20 port-item">
+				<div class="featured-img-wrap has-hover" id="proj-1">
+					<img src="{{asset('img/logo-peluche.png')}}">
+				</div>
+			</div>
+			<div class="column column-20 port-item">
+				<div class="featured-img-wrap">
+					<img src="{{asset('img/logo-pridejoy.png')}}">
+				</div>
+			</div>
+			<div class="column column-20 port-item">
+				<div class="featured-img-wrap">
+					<img src="{{asset('img/port-1.png')}}">
+				</div>
+			</div>
+			<div class="column column-20 port-item">
+				<div class="featured-img-wrap">
+					<img src="{{asset('img/port-1.png')}}">
+				</div>
+			</div>
 		</div>
 	</div>
 

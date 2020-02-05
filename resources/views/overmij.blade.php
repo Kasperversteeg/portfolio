@@ -17,12 +17,8 @@
 					<h3>Over mij</h3>
 				</div>
 				<div class="row">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Ik ben Kasper Versteeg, 31 jaar oud en ik ben een webdeveloper. Ik ben meer dan 15 jaar actief geweest in de Horeca branche maar ik heb besloten dat het tijd was voor wat nieuws. Ik hou me voornamelijk bezig met het ontwikkelen van websites voor de kleinere bedrijven. Ik heb me gespecialiseerd op UX-design, dit houdt in dat ik er voor zorg dat de website gebruiksvriendelijk is en dat het doel van de website duidelijk wordt.
+					Vragen? Neem gerust contact met me op!</p>
 				</div>
 			</div>
 		</div>
@@ -44,7 +40,7 @@
 				<h3>Socials:</h3>
 				<ul>
 					<li class="pict"><a href="https://www.facebook.com/kasper.versteeg.1">@svg('img/pictograms/pict-fb.svg', 'Facebook')<span>Facebook</span></a></li>
-					<li class="pict"><a href="https://www.linkedin.com/in/kasper-versteeg-97419051">@svg('img/pictograms/pict-li.svg', 'LinkedIn')<span>LinkedIn</span></a></li>
+					<li class="pict"><a href="https://www.linkedin.com/in/kasper-versteeg">@svg('img/pictograms/pict-li.svg', 'LinkedIn')<span>LinkedIn</span></a></li>
 					<li class="pict"><a href="https://github.com/Kasperversteeg">@svg('img/pictograms/pict-gh.svg', 'GitHub')<span>GitHub</span></a></li>
 				</ul>
 			</div>
@@ -58,8 +54,8 @@
 	<div class="content-section">
 		<div class="row info-skill">
 			<div class="column column-33">
-				<div class="row">
-					<p>img here</p>
+				<div class="circle-img-wrap">
+					<img src="{{asset('img/om-2.jpg')}}">
 				</div>
 			</div>
 			<div class="column column-66">
@@ -68,6 +64,7 @@
 				</div>
 				<div class="row skills">
 					<ul>
+						<li><span>Opleiding</span>Communicatie & Multimedia Design</li>
 						<li><span>Website op maat</span>Het realiseren van een website voor iedereen</li>
 						<li><span>Usability expert</span>Het verbeteren van de gebruikersvriendelijkheid van de website of app</li>
 						<li><span>Wordpress</span>Kennis van het cms-framework</li>
