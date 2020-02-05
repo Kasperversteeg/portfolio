@@ -17,10 +17,10 @@
 .main-cta{
 	position: relative;
 }
-.main-cta div{
-	position:absolute;
-	right: 0;
-	bottom:3.5rem;
+#main-cta-button{
+	position: absolute;
+	bottom:0;
+	right:0;
 }
 
 // main page portfolio items
@@ -33,7 +33,9 @@
 
 	.column{
 		cursor: pointer;
-
+		.featured-port-item{
+			border: 1px solid $prim-color;
+		}
 		.featured-img-wrap{
 			img{
 				max-width:100%;
@@ -67,13 +69,15 @@
 	padding: 2rem 0;
 	.port-item{
 		cursor: pointer;
-		border:1px solid $prim-color;
-		max-height:200px;
+		max-height:250px;
 		.featured-img-wrap{
+			border:1px solid $prim-color;
 			height:100%;
 			width: 100%;
 			overflow: hidden;
 			padding:1rem;
+			display: flex;
+			justify-content: center;
 			img{
 				height: 99%;
 				max-width: none;
@@ -87,13 +91,15 @@
 .info-contact{
 	justify-content: center;
 }
-.info-skill{
-	padding-bottom: 2rem;
+.info-skill, .info-intro{
 	.column-33 {
 		display:flex;
 		justify-content: center;	
-		}
 	}
+}
+.info-skill{
+	padding-bottom: 2rem;
+}
 	
 .skills {
 	ul {
@@ -123,9 +129,9 @@
 					padding-left:2rem;
 				}
 				svg{
-				height:30px;
-				width:30px;
-				fill:$prim-color;
+					height:30px;
+					width:30px;
+					fill:$prim-color;
 				}
 				&:hover svg{
 					fill:$third-color;
@@ -136,8 +142,6 @@
 					color: $third-color;
 				}
 			}
-
-			
 		}
 	}
 } 

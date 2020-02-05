@@ -54,14 +54,14 @@
 					<h5>Contact:</h5>		
 					<ul>
 						<li class="foot-pict"><a href="tel:+31611119944"><span>@svg('img/pictograms/pict-tel.svg', 'telefoon')</span>+31 6 11 11 99 44</a></li>
-						<li class="foot-pict"><a href="mailto:kasperversteeg@gmail.com"><span>@svg('img/pictograms/pict-mail.svg', 'e-mail')</span>kasperversteeg@gmail.com</a></li>
+						<li class="foot-pict"><a href="mailto:info@kasperversteeg.com"><span>@svg('img/pictograms/pict-mail.svg', 'e-mail')</span>info@kasperversteeg.com</a></li>
 					</ul>
 				</div>
 				<div class="column foot-socials">
 					<h5>Socials:</h5>
 					<ul>
 						<li class="foot-pict"><a href="https://www.facebook.com/kasper.versteeg.1">@svg('img/pictograms/pict-fb.svg', 'Facebook')</a></li>
-						<li class="foot-pict"><a href="https://www.linkedin.com/in/kasper-versteeg-97419051">@svg('img/pictograms/pict-li.svg', 'LinkedIn')</a></li>
+						<li class="foot-pict"><a href="https://www.linkedin.com/in/kasper-versteeg">@svg('img/pictograms/pict-li.svg', 'LinkedIn')</a></li>
 						<li class="foot-pict"><a href="https://github.com/Kasperversteeg">@svg('img/pictograms/pict-gh.svg', 'GitHub')</a></li>
 					</ul>
 				</div>

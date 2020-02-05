@@ -17,8 +17,7 @@
 			</div>
 			<div class="column column-20 main-cta">
 				<div>
-					<p></p>
-					<a class="button" href="">Mail mij</a>
+					<a class="button" id="main-cta-button" href="mailto:info@kasperversteeg.com">Mail mij</a>
 				</div>
 			</div>
 			
@@ -37,7 +36,7 @@
 		</div>
 		<div class="row main-featured portfolio">
 			<div class="column column-20">
-				<div class="has-hover">
+				<div class="has-hover featured-port-item">
 					<div class="featured-img-wrap">
 						<img src="{{asset('img/port-1.png')}}">
 					</div>
@@ -47,7 +46,7 @@
 				</div>
 			</div>
 			<div class="column column-20">
-				<div class="has-hover">
+				<div class="featured-port-item has-hover">
 					<div class="featured-img-wrap">
 						<img src="{{asset('img/port-2.png')}}"></div>
 					<div class="featured-content">
@@ -56,7 +55,7 @@
 				</div>
 			</div>
 			<div class="column column-20">
-				<div class="has-hover">
+				<div class="featured-port-item has-hover">
 					<div class="featured-img-wrap">
 						<img src="{{asset('img/port-1.png')}}"></div>
 					<div class="featured-content">
@@ -65,7 +64,7 @@
 				</div>
 			</div>
 			<div class="column column-20">
-				<div class="has-hover">
+				<div class="featured-port-item has-hover">
 					<div class="featured-img-wrap">
 						<img src="{{asset('img/port-1.png')}}"></div>
 					<div class="featured-content">

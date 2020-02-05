@@ -242,6 +242,7 @@ h6 {
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
+  padding: calc(100% / 2 - 2rem) 1rem;
 }
 
 .column:hover .has-hover::before {
@@ -259,10 +260,22 @@ h6 {
 .circle-img-wrap img {
   width: auto;
   height: 100%;
+  max-width: none;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.justify-end {
+  -webkit-box-pack: end;
+          justify-content: flex-end;
 }
 
 #overlay {
   position: absolute;
+  padding: 10rem;
   top: 0;
   left: 0;
   z-index: 999;
@@ -272,9 +285,40 @@ h6 {
 }
 
 #overlay-container {
+  margin: 0 auto;
   height: 100%;
   padding: 4rem;
   background-color: #fff;
+}
+
+#overlay-close-button {
+  color: #AF1B1B;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 0.5rem;
+  font-size: 8rem;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+}
+
+#overlay-close-button:hover {
+  color: #575757;
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+}
+
+#overlay-img-wrap {
+  position: relative;
+  height: 50%;
+}
+
+#overlay-img {
+  border: 1px solid #AF1B1B;
+  height: 100%;
+  width: 100%;
 }
 
 .home-header h2 {
@@ -289,10 +333,10 @@ h6 {
   position: relative;
 }
 
-.main-cta div {
+#main-cta-button {
   position: absolute;
+  bottom: 0;
   right: 0;
-  bottom: 3.5rem;
 }
 
 .content-section {
@@ -306,6 +350,10 @@ h6 {
 
 .main-featured .column {
   cursor: pointer;
+}
+
+.main-featured .column .featured-port-item {
+  border: 1px solid #AF1B1B;
 }
 
 .main-featured .column .featured-img-wrap img {
@@ -339,15 +387,19 @@ h6 {
 
 .port-row .port-item {
   cursor: pointer;
-  border: 1px solid #AF1B1B;
-  max-height: 200px;
+  max-height: 250px;
 }
 
 .port-row .port-item .featured-img-wrap {
+  border: 1px solid #AF1B1B;
   height: 100%;
   width: 100%;
   overflow: hidden;
   padding: 1rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .port-row .port-item .featured-img-wrap img {
@@ -360,15 +412,16 @@ h6 {
           justify-content: center;
 }
 
-.info-skill {
-  padding-bottom: 2rem;
-}
-
-.info-skill .column-33 {
+.info-skill .column-33,
+.info-intro .column-33 {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
+}
+
+.info-skill {
+  padding-bottom: 2rem;
 }
 
 .skills ul {

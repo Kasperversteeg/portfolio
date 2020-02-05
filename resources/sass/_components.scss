@@ -131,6 +131,7 @@ h6 {
       font-weight: bold;
       text-align: center;
       font-size: 2rem;
+      padding: calc(100% / 2 - 2rem) 1rem;
     }
  }
  .column:hover .has-hover::before {
@@ -146,12 +147,23 @@ h6 {
   border-radius: 50%;
   img{
     width: auto;
-    height: 100%;
+    height:100%;
+    max-width: none;
   }
 }
 
+.justify-center{
+  justify-content: center;
+}
+.justify-end{
+  justify-content: flex-end;
+}
+
+
+// overlay showed when portfolio item is clicked
 #overlay{
   position: absolute;
+  padding:10rem;
   top:0;
   left:0;
   z-index: 999;
@@ -159,8 +171,39 @@ h6 {
   width:100%;
   background-color:rgb(177,175,175,0.9);
 }
+
+
 #overlay-container{
+  margin:0 auto;
   height:100%;
   padding: 4rem;
   background-color: #fff;
+  // position: relative;
+}
+//close button
+#overlay-close-button{
+  color: $prim-color;
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: .5rem .5rem;
+    font-size: 8rem; 
+    line-height: 20px;
+    cursor: pointer;
+    transform: 0.3s;
+}
+#overlay-close-button:hover{
+  color: $sec-color;
+        transform: 0.3s;
+
+}
+#overlay-img-wrap{
+  position: relative;
+  height: 50%;
+}
+
+#overlay-img{
+  border:1px solid $prim-color;
+  height:100%;
+  width: 100%;
 }
