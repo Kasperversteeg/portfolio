@@ -34,46 +34,44 @@
 		<div class="row">
 			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
 		</div>
-		<div class="row main-featured portfolio">
-			<div class="column column-20">
-				<div class="has-hover featured-port-item">
-					<div class="featured-img-wrap">
-						<img src="{{asset('img/port-1.png')}}">
-					</div>
-					<div class="featured-content">
-						<h3>Kasper Versteeg</h3>
-					</div>
+		<div class="row main-featured">
+			<div class="column column-20 port-item">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-3-thumb.png')}}">
+				</div>
+				<div class="featured-content">
+					<h3>Kasper Versteeg</h3>
 				</div>
 			</div>
-			<div class="column column-20">
-				<div class="featured-port-item has-hover">
-					<div class="featured-img-wrap">
-						<img src="{{asset('img/port-2.png')}}"></div>
-					<div class="featured-content">
-						<h3>Peluche</h3>
-					</div>
+
+			<div class="column column-20 port-item">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-2-thumb.png')}}">
+				</div>
+				<div class="featured-content">
+					<h3>Peluche</h3>
 				</div>
 			</div>
-			<div class="column column-20">
-				<div class="featured-port-item has-hover">
-					<div class="featured-img-wrap">
-						<img src="{{asset('img/port-1.png')}}"></div>
-					<div class="featured-content">
-						<h3>Pride and joy labradoodles</h3>
-					</div>
+			<div class="column column-20 port-item">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-1-thumb.png')}}">
+				</div>
+				<div class="featured-content">
+					<h3>Pride and joy labradoodles</h3>
 				</div>
 			</div>
-			<div class="column column-20">
-				<div class="featured-port-item has-hover">
-					<div class="featured-img-wrap">
-						<img src="{{asset('img/port-1.png')}}"></div>
-					<div class="featured-content">
-						<h3>Bernerdoodles</h3>
-					</div>
+			<div class="column column-20 port-item">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-1-thumb.png')}}">
+				</div>
+				<div class="featured-content">
+					<h3>Bernerdoodles</h3>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="row divider"></div>
 
 	<div class="content-section">
 		<div class="row main-versions main-content-section">

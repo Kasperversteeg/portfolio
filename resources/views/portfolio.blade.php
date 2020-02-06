@@ -12,27 +12,27 @@
 			<h1>Projecten</h1>
 		</div>
 		<div class="row">
-			<p>Een overzicht van de projecten die ik gemaakt heb</p>
+			<p>Een overzicht van gemaakte projecten</p>
 		</div>
 		<div class="row port-row">
 			<div class="column column-25 port-item">
-				<div class="featured-img-wrap has-hover" id="proj-1">
-					<img src="{{asset('img/logo-peluche.png')}}">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-3-thumb.png')}}">
 				</div>
 			</div>
 			<div class="column column-25 port-item">
-				<div class="featured-img-wrap has-hover">
-					<img src="{{asset('img/logo-pridejoy.png')}}">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-2-thumb.png')}}">
 				</div>
 			</div>
 			<div class="column column-25 port-item">
-				<div class="featured-img-wrap has-hover">
-					<img src="{{asset('img/logo-peluche.png')}}">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-1-thumb.png')}}">
 				</div>
 			</div>
 			<div class="column column-25 port-item">
-				<div class="featured-img-wrap has-hover">
-					<img src="{{asset('img/logo-pridejoy.png')}}">
+				<div class="port-img-wrap has-hover">
+					<img src="{{asset('img/port-1-thumb.png')}}">
 				</div>
 			</div>
 		</div>

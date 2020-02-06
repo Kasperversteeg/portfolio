@@ -9,8 +9,11 @@ nav {
 	-webkit-box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
     -moz-box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
     box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
-
-	.row {
+	.main-logo{
+		svg{
+			padding-top:.6rem;
+			max-width: 21.5rem;
+		}
 	}
 	.main-nav {
 		// active page --
@@ -20,9 +23,10 @@ nav {
 
 		a{
 			font-weight:bold;
+			font-size: 1.8rem;
 			display: inline-block;
 			color: $prim-color;
-			padding: 1.5rem;
+			padding: 4rem 1.5rem;
 		}
 		ul{
 			display: flex;

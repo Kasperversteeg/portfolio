@@ -2,11 +2,12 @@
 <html>
 <head>
 	{{-- milligram --}}
-	<link rel="stylesheet" type="text/css" href="{{asset('milligram.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/milligram.css')}}">
 	{{-- fonts --}}
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 	{{-- custom files --}}
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="stylesheet" href="css/app.css">
 	<script type="text/javascript" src="js/app.js"></script>
 	
@@ -18,8 +19,8 @@
 		<div class="container">
 			<div class="row">
 				{{-- logo left --}}
-				<div class="column column-25">
-					<a href="/">Logo pls</a>
+				<div class="column column-25 main-logo">
+					<a href="/">@svg('img/kv-logo.svg', 'kv-logo')</a>
 				</div>
 				{{-- menu right --}}
 				<div class="column column-75 main-nav">
@@ -45,8 +46,8 @@
 	<footer>
 		<div class="container">
 			<div class="row foot-content">
-				<div class="column">
-					<p>kleine versie logo</p>
+				<div class="column foot-logo">
+					<a href="/">@svg('img/kv-logo-white.svg', 'kv-logo')</a>
 					<p>Kasper Versteeg</p>
 					<p>Webdeveloper</p>
 				</div>

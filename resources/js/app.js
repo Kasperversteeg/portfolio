@@ -1,50 +1,23 @@
-// create object
-const makeElement = (type, attributes, ...children) => {
-  const el = document.createElement(type)
-
-  for (key in attributes) {
-    el.setAttribute(key, attributes[key])
-  }
-
-  children.forEach(child => {
-    if (typeof child === 'string') {
-      el.appendChild(document.createTextNode(child))
-    } else {
-      el.appendChild(child)
-    }
-  })
-
-  return el
-}
-
-
-
-
 document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
 	var url = window.location.pathname;
-	// console.log(url);
 	var element;
 	switch(url){
 		case '/':
-			// console.log('homepage');
 			element = document.getElementById('home');
 			element.classList.add('active');
 			break;
 		case '/overmij':
-			// console.log('overmij');
 			element = document.getElementById('over');
 			element.classList.add('active');
 			break;
 		case '/portfolio':
-			// console.log('port');
 			element = document.getElementById('port');
 			element.classList.add('active');
 			break;
 		default:;
 	}
 	setupClass();
-	// openOverlay('1');	
 });
 
 // do stuff to hover class elements
@@ -53,23 +26,22 @@ function setupClass(){
 	for (var i = 0; i < hoverClass.length; i++) {
 		hoverClass[i].setAttribute("hover-text", "Klik voor meer info");
 		hoverClass[i].id = i;
-
 		hoverClass[i].addEventListener('click', function(){openOverlay(this.id)}, false);
 	 }
 };
 
 
 function makeOverlay(id){ 
-	console.log (id);
+	// console.log ('ID for overlaycontent: ' + id);
 	var curr = document.getElementById(id);
 	var currentId = curr.id;
 	var name;
 
-	//set name
+	//set name, make sure when php object to make title manditory
 	var h3 = document.getElementById(id).querySelectorAll('h3');
 	if(h3[0]){
-		console.log('content found');
 		name = h3[0].textContent;
+		// console.log('Title of project found, it is: ' + name);
 	} else {
 		switch(id){
 			case '0':
@@ -82,157 +54,161 @@ function makeOverlay(id){
 				name = "Peluche"
 				break;
 			case '3':
-				name = "Kasper Versteeg"
+				name = "Bernerdoodles"
 				break;
 			default:
-				name = "nothing"
 			break;
 		};	
 	}
+	
+	// create portfolio object
+	var portItem = setVar(name);
 
+	// check if portfolio item is set
+	if (portItem){
+		for (var p in portItem){
+			if (portItem[p] === "") {
+				if (p == 'url')portItem.url = "Sorry er is geen url opgegeven";
+				else if (p == 'description')portItem.description = "Sorry er is geen beschrijving opgegeven";
+				else if (p == 'img')portItem.img = "noimg.png";
+			}
+		}
+		// set variables for modal view 
+		var url = portItem.url;
+		var desc = portItem.description;
+		var img = portItem.img;
 
-	//set url with title
-	var url = setUrl(name);
+		// create object
+		const makeElement = (type, attributes, ...children) => {
+		  const el = document.createElement(type)
 
-	//set img with title
-	var img = setImg(name);
+		  for (key in attributes) {
+		    el.setAttribute(key, attributes[key])
+		  }
 
-	//set description with title
-	var desc = setDescription(name);
+		  children.forEach(child => {
+		    if (typeof child === 'string') {
+		      el.appendChild(document.createTextNode(child))
+		    } else {
+		      el.appendChild(child)
+		    }
+		  })
+		  return el
+		}
 
-	// overlay layout object
-	var	overlay = makeElement('div',
-		{ id: 'overlay' },
-		makeElement('div', {class: 'container', id: 'overlay-container'},
-			makeElement('div',{class: 'row justify-end'}, 
-				makeElement('a', {id: 'overlay-close-button'}, "\xD7")
-				),
-			makeElement('div', {class:'row justify-center'},
-				makeElement('div', {class : 'column column-90' ,id : 'overlay-img-wrap'}, 
-					makeElement('img', {id : 'overlay-img', src : 'img/'+img })
+		// overlay layout object
+		var	overlay = makeElement('div',
+			{ id: 'overlay' },
+			makeElement('div', {class: 'container', id: 'overlay-container'},
+				makeElement('div',{class: 'row justify-end'}, 
+					makeElement('a', {id: 'overlay-close-button'}, "\xD7")
+					),
+				makeElement('div', {class:'row justify-center'},
+					makeElement('div', {class : 'column column-90' ,id : 'overlay-img-wrap'},
+						makeElement('a', {href : '//'+url},
+							makeElement('img', {id : 'overlay-img', src : 'img/'+img }) 
+							) 
+						)
+					),
+				makeElement('div', {class:'row justify-center'},
+					makeElement('h3', {class : 'column column-90' ,id : 'overlay-title'}, name)
+					),
+				makeElement('div', {class:'row justify-center'},
+					makeElement('div', {class : 'column column-90'}, 
+						makeElement('a', {id : 'overlay-url', href : '//'+url, class: 'a-inline'}, url)
+						)
+					),
+				makeElement('div', {class:'row justify-center'},
+					makeElement('p', {class : 'column column-90' ,id : 'overlay-description'}, desc)
 					)
-				),
-			makeElement('div', {class:'row justify-center'},
-				makeElement('h3', {class : 'column column-90' ,id : 'overlay-title'}, name)
-				),
-			makeElement('div', {class:'row justify-center'},
-				makeElement('div', {class : 'column column-90'}, 
-					makeElement('a', {id : 'overlay-url', href : '//'+url, class: 'a-inline'}, url)
-					)
-				),
-			makeElement('div', {class:'row justify-center'},
-				makeElement('p', {class : 'column column-90' ,id : 'overlay-description'}, desc)
 				)
-			)
-	 	);
+		 	);
 	return overlay;
+
+	} else {
+		return false
 	};
+};
+
+function setVar(name){
+	function Item(name, url, description, img) {
+		this.name = name;
+		this.url = url;
+		this.description = description;
+		this.img = img;
+	}
+	var item;
+	switch(name){
+		case 'Kasper Versteeg':
+			item = new Item(
+				"Kasper Versteeg", 
+				"www.kasperversteeg.com",
+				"Dit is een lopend project wat eigen website betreft, ik neem de tijd om wat nieuwe functionaliteit van het laravel framework in combinatie met javascript te leren. De website is gemaakt in met het laravel framework en de animaties zijn pure javascript.",
+				"port-3-img.png"				
+				);
+			break;
+		case 'Peluche':
+			item = new Item(
+				"Peluche", 
+				"www.labradoodles.it",
+				"Dit is een project in opdracht van de eigenaar van 'pride and joy' het is een Italiaanse startup van de zelfde honden fokker. Het is een Wordpress site met wat custom aanpassingen.",
+				"port-2-img.png"				
+				);
+			break;
+		case 'Pride and joy labradoodles':
+			item = new Item(
+				"Pride and joy labradoodles", 
+				"www.prideandjoyaustralianlabradoodles.nl",
+				"Dit is een project in opdracht van de fokker van australian labradoodles. Het idee van de website is de gebruikers de sfeer van de fokker te geven, zodat het gelijk duidelijk is om wat voor soort fokker het gaat. Het is een wordpress website met aanpassingen.",
+				"port-1-img.png"				
+				);
+			break;
+		case 'Bernerdoodles':
+			item = new Item(
+				"Bernerdoodles", 
+				"",
+				"",
+				""				
+				);
+			break;
+		default:
+		break;
+	}
+	return item;
+}
 
 // open overlay
-function openOverlay(i){
-	console.log ('open overlay');
-
+function openOverlay(id){
 	//call overlay function to create
-	var hoverId = i;
+	var overlay = makeOverlay(id);
 
-	var overlay = makeOverlay(hoverId);
-	console.log('element clicked = ' + hoverId);
+	if (overlay){
+		// console.log('overlay has been set; ' + overlay);
+		// add it to body, default opacity = 0
+		document.body.appendChild(overlay);
+		// fade in the overlay
+		fadeIn(overlay, 200);
 
-	// add it to body, default opacity = 0
-	document.body.appendChild(overlay);
-	// fade in the overlay
-	fadeIn(overlay, 200);
+		// add some eventlisteners
+		var button = document.getElementById('overlay-close-button');
+		button.addEventListener('click', closeOverlay, false);
 
-	// add some eventlisteners
-	var button = document.getElementById('overlay-close-button');
-	button.addEventListener('click', closeOverlay, false);
-
-	var container = document.getElementById('overlay-container');
-	window.onclick = function(event) {
-	  if (event.target == overlay) {
-	  	closeOverlay(); 
-	  } else if (event.target == container){
-		//do nothing
-	  }
+		var container = document.getElementById('overlay-container');
+		window.onclick = function(event) {
+		  if (event.target == overlay) {
+		  	closeOverlay(); 
+		  } else if (event.target == container){
+			//do nothing
+		  }
+		}
+	} else {
+		// console.log('no overlay set');
 	}
-}
-
-// untill i figure out php, description is set here
-function setImg(name){
-	var img 
-	console.log ('setting img for ' + name);
-	switch(name){
-		case 'Kasper Versteeg':
-			img = "port-1.png"
-			break;
-		case 'Peluche':
-			img = "port-2.png"
-			break;
-		case 'Pride and joy labradoodles':
-			img = "port-1.png"
-			break;
-		case 'Bernerdoodles':
-			img = "port-1.png"
-			break;
-		default:
-			img = "No img found, please contact the webmaster"
-		break;
-	}
-	return img;
-}
-// untill i figure out php, description is set here
-function setDescription(name){
-	var text;
-	console.log ('setting description for ' + name);
-	switch(name){
-		case 'Kasper Versteeg':
-			text = "kasper versteeg"
-			break;
-		case 'Peluche':
-			text = "peluche"
-			break;
-		case 'Pride and joy labradoodles':
-			text = "pride and joy"
-			break;
-		case 'Bernerdoodles':
-			text = "bernerdoodles"
-			break;
-		default:
-			text = "No description found, please contact the webmaster"
-		break;
-	}
-	return text;
-}
-
-// untill i figure out php, url is set here
-function setUrl(name){
-	var url;
-	console.log ('setting description for ' + name);
-	switch(name){
-		case 'Kasper Versteeg':
-			url = "www.kasperversteeg.com"
-			break;
-		case 'Peluche':
-			url = "www.labradoodles.it"
-			break;
-		case 'Pride and joy labradoodles':
-			url = "url"
-			break;
-		case 'Bernerdoodles':
-			url = "under construction"
-			break;
-		default:
-			text = "No url found,"
-		break;
-	}
-	return url;
 }
 
 // close overlay
 function closeOverlay(){
-	console.log('close overlay');
 	overlay = document.getElementById('overlay');
-
 	fadeOut(overlay, 20);
 	var removeOverlay = function(){
 		overlay.remove();
