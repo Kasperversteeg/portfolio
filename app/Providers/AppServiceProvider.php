@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
             
-     }
+    }
 
     /**
      * Bootstrap any application services.
@@ -27,6 +28,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
+
         \Blade::directive('svg', function($arguments) {
             // Funky madness to accept multiple arguments into the directive
             list($path, $class) = array_pad(explode(',', trim($arguments, "() ")), 2, '');

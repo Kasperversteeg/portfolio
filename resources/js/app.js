@@ -105,7 +105,7 @@ function makeOverlay(id){
 					),
 				makeElement('div', {class:'row justify-center'},
 					makeElement('div', {class : 'column column-90' ,id : 'overlay-img-wrap'},
-						makeElement('a', {href : '//'+url},
+						makeElement('a', {href : '//'+url,  target : '_blank'},
 							makeElement('img', {id : 'overlay-img', src : 'img/'+img }) 
 							) 
 						)
@@ -115,7 +115,7 @@ function makeOverlay(id){
 					),
 				makeElement('div', {class:'row justify-center'},
 					makeElement('div', {class : 'column column-90'}, 
-						makeElement('a', {id : 'overlay-url', href : '//'+url, class: 'a-inline'}, url)
+						makeElement('a', {id : 'overlay-url', href : '//'+url, class: 'a-inline',  target : '_blank'}, url)
 						)
 					),
 				makeElement('div', {class:'row justify-center'},

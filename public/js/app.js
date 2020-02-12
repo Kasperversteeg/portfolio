@@ -222,7 +222,8 @@ function makeOverlay(id) {
       "class": 'column column-90',
       id: 'overlay-img-wrap'
     }, makeElement('a', {
-      href: '//' + url
+      href: '//' + url,
+      target: '_blank'
     }, makeElement('img', {
       id: 'overlay-img',
       src: 'img/' + img
@@ -238,7 +239,8 @@ function makeOverlay(id) {
     }, makeElement('a', {
       id: 'overlay-url',
       href: '//' + url,
-      "class": 'a-inline'
+      "class": 'a-inline',
+      target: '_blank'
     }, url))), makeElement('div', {
       "class": 'row justify-center'
     }, makeElement('p', {
