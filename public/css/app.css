@@ -194,12 +194,9 @@ h6 {
 }
 
 .divider {
-  margin: 1rem 0;
-  display: block;
-  border: none;
-  color: white;
-  height: 1px;
-  background: -webkit-radial-gradient(center, 50rem 40px, #AF1B1B, white);
+  border-bottom: 1px solid #AF1B1B;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .button {
@@ -332,6 +329,14 @@ h6 {
 #overlay-title {
   font-size: 1.9rem;
   font-weight: 800;
+}
+
+.content-section {
+  opacity: 0;
+}
+
+.home-header #typewriter {
+  border-right: 0.4rem solid #AF1B1B;
 }
 
 .home-header h2 {

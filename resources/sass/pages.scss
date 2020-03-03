@@ -2,9 +2,14 @@
 @use 'variables';
 
 // home page css
-
+.content-section{
+	opacity: 0;
+}
 //home header
 .home-header{
+	#typewriter{
+		border-right:0.4rem solid $prim-color;
+	}
 	h2{
 		font-family: 'Source Code Pro', monospace;
 		
@@ -13,6 +18,7 @@
 		}
 	}
 }
+
 // call to action homepage
 .main-cta{
 	position: relative;

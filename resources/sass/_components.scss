@@ -76,12 +76,9 @@ h6 {
 	min-height: calc(100vh - 227px);
 }
  .divider {
- 	margin:1rem 0;
- 	display:block;
-    border:none;
-    color:white;
-    height:1px;
-    background:-webkit-radial-gradient(center, 50rem 40px, $prim-color, white)
+  border-bottom: 1px solid $prim-color;
+  width:90%;
+  margin:0 auto;
  }
  // button class
  .button{

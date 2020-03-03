@@ -8,7 +8,7 @@
 @section('content')
 	<div class="content-section">
 		<div class="row home-header">
-			<h2>< <span>Webdeveloper </span>/<span> Multimedia expert </span>></h2>
+			<h2 id="typewriter">{{--  --}}</h2>
 		</div>
 		<div class="row">
 			<div class="column column-80">

@@ -118,7 +118,26 @@ document.addEventListener("DOMContentLoaded", function () {
       ;
   }
 
-  setupClass();
+  setupClass(); // Setup typewrite effect
+
+  var typewriter = document.getElementById('typewriter');
+
+  if (typewriter) {
+    var elemText = ["< <span>Webdeveloper </span>/<span> Multimedia expert </span>> "];
+    var period = 75;
+    new TxtType(typewriter, elemText, period);
+  }
+
+  ;
+  var sections = document.getElementsByClassName("content-section");
+  var x = 400;
+
+  for (var i = 0; i < sections.length; i++) {
+    var elem = sections[i]; // fade in the overlay
+
+    fadeIn(elem, x);
+    x = x + 600;
+  }
 }); // do stuff to hover class elements
 
 function setupClass() {
@@ -359,7 +378,33 @@ function fadeOut(el, time) {
       clearInterval(fadeEffect);
     }
   }, time);
-}
+} // typewriter effect
+
+
+var TxtType = function TxtType(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+};
+
+TxtType.prototype.tick = function () {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+  var loopnum = this.loopNum++;
+  this.txt = fullTxt.substring(0, this.txt.length + 1);
+
+  if (loopnum <= 64) {
+    this.el.innerHTML = this.txt;
+  }
+
+  var that = this;
+  setTimeout(function () {
+    that.tick();
+  }, this.period);
+};
 
 /***/ }),
 
