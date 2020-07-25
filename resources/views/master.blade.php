@@ -14,6 +14,8 @@
 	<title>Kasper Versteeg - @yield('title')</title>
 </head>
 <body>
+   <div id="app">
+      
 	{{-- navigation --}}
 	<nav>
 		<div class="container">
@@ -73,6 +75,7 @@
 		</div>
 	</footer>
 
+</div>
 
 
 
