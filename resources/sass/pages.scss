@@ -1,146 +1,139 @@
 // import all custom variables and mixins
 @use 'variables';
-
 // home page css
-.content-section{
-	opacity: 0;
+.content-section {
+    opacity: 0;
 }
+
 //home header
-.home-header{
-	#typewriter{
-		border-right:0.4rem solid $prim-color;
-	}
-	h2{
-		font-family: 'Source Code Pro', monospace;
-		
-		span{
-			color: $sec-color;
-		}
-	}
+.home-header {
+    #typewriter {
+        border-right: 0.4rem solid $prim-color;
+    }
+    h2 {
+        font-family: 'Source Code Pro', monospace;
+        span {
+            color: $sec-color;
+        }
+    }
 }
 
 // call to action homepage
-.main-cta{
-	position: relative;
+.main-cta {
+    position: relative;
 }
-#main-cta-button{
-	position: absolute;
-	bottom:13px;
-	right:11px;
+
+#main-cta-button {
+    position: absolute;
+    bottom: 13px;
+    right: 11px;
 }
 
 // main page portfolio items
-.content-section{
-	padding: 3rem 0;
+.content-section {
+    padding: 3rem 0;
 }
 
-.main-featured{
-	justify-content: space-between;
-
-	.column{
-		cursor: pointer;
-		.featured-content{
-			padding:1rem 1rem 0 1rem;
-			h3{
-				// display:block;
-				// margin-bottom: 0;
-			}
-		}
-	}
+.main-featured {
+    justify-content: space-between;
+    .column {
+        cursor: pointer;
+        .featured-content {
+            padding: 1rem 1rem 0 1rem;
+        }
+    }
 }
-
 
 // media query
 @media only screen and (max-width: 640px) {
-	.main-cta div{
-		position:static;
-	}
+    .main-cta div {
+        position: static;
+    }
 }
 
-
-.port-item{
-		cursor: pointer;
-		.port-img-wrap{
-			border:1px solid $prim-color;	
-			width: 100%;
-			padding-top: 100%;
-			position: relative;
-			img{
-				z-index: -1;
-				position: absolute;
-				padding:2rem;
-				top:0;
-				left:0;
-				bottom: 0;
-				right:0;
-			}
-		}
-	}
-
+.port-item {
+    cursor: pointer;
+    .port-img-wrap {
+        border: 1px solid $prim-color;
+        width: 100%;
+        padding-top: 100%;
+        position: relative;
+        img {
+            z-index: -1;
+            position: absolute;
+            padding: 2rem;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
 
 // Portfolio page
-.port-row{
-	justify-content: space-between;
-	padding: 2rem 0;
-	
+.port-row {
+    justify-content: space-between;
+    padding: 2rem 0;
 }
-
 
 // overmij page
-.info-contact{
-	justify-content: center;
-}
-.info-skill, .info-intro{
-	.column-33 {
-		display:flex;
-		justify-content: center;	
-	}
-}
-.info-skill{
-	padding-bottom: 2rem;
-}
-	
-.skills {
-	ul {
-		list-style: none;
-		li {
-			margin-bottom: 0;
-			span {
-				display: inline-block;
-				width:150px;
-				color: $sec-color;
-				font-weight: bold;
-			}
-		}
-	}
+.info-contact {
+    justify-content: center;
 }
 
-.info-contact{
-	ul{
-		list-style: none;
-		.pict{	
-			a{
-				display: flex;
-				align-items: center;
-				color: $prim-color;
-				font-size: 1.6rem;
-				span{
-					padding-left:2rem;
-				}
-				svg{
-					height:30px;
-					width:30px;
-					fill:$prim-color;
-				}
-				&:hover svg{
-					fill:$third-color;
-					transition: 0.2s;
-				}
-				&:hover{
-					text-decoration: underline;
-					color: $third-color;
-				}
-			}
-		}
-	}
-} 
+.info-skill,
+.info-intro {
+    .column-33 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.info-skill {
+    padding-bottom: 2rem;
+}
+
+.skills {
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 0;
+            span {
+                display: inline-block;
+                width: 150px;
+                color: $sec-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.info-contact {
+    ul {
+        list-style: none;
+        .pict {
+            a {
+                display: flex;
+                align-items: center;
+                color: $prim-color;
+                font-size: 1.6rem;
+                span {
+                    padding-left: 2rem;
+                }
+                svg {
+                    height: 30px;
+                    width: 30px;
+                    fill: $prim-color;
+                }
+                &:hover svg {
+                    fill: $third-color;
+                    transition: 0.2s;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    color: $third-color;
+                }
+            }
+        }
+    }
+}

@@ -33,9 +33,10 @@
 		</div>
 		<div class="row">
 			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
-		</div>
-		<div class="row main-featured">
-			<div class="column column-20 port-item">
+      </div>
+      
+		<div class="grid grid-cols-4 gap-2">
+			<div class="">
 				<div class="port-img-wrap has-hover">
 					<img src="{{asset('img/port-3-thumb.png')}}">
 				</div>
@@ -44,7 +45,7 @@
 				</div>
 			</div>
 
-			<div class="column column-20 port-item">
+			<div class="">
 				<div class="port-img-wrap has-hover">
 					<img src="{{asset('img/port-2-thumb.png')}}">
 				</div>
@@ -52,7 +53,7 @@
 					<h3>Peluche</h3>
 				</div>
 			</div>
-			<div class="column column-20 port-item">
+			<div class="">
 				<div class="port-img-wrap has-hover">
 					<img src="{{asset('img/port-1-thumb.png')}}">
 				</div>
@@ -60,7 +61,7 @@
 					<h3>Pride and joy labradoodles</h3>
 				</div>
 			</div>
-			<div class="column column-20 port-item">
+			<div class="">
 				<div class="port-img-wrap has-hover">
 					<img src="{{asset('img/port-1-thumb.png')}}">
 				</div>
