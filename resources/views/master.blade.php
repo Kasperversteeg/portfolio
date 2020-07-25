@@ -20,7 +20,7 @@
 			<div class="row">
 				{{-- logo left --}}
 				<div class="column column-25 main-logo">
-					<a href="/">@svg('img/kv-logo.svg', 'kv-logo')</a>
+					<a href="/">@svg('img/kv-logo-full.svg', 'kv-logo')</a>
 				</div>
 				{{-- menu right --}}
 				<div class="column column-75 main-nav">
@@ -47,7 +47,7 @@
 		<div class="container">
 			<div class="row foot-content">
 				<div class="column foot-logo">
-					<a href="/">@svg('img/kv-logo-white.svg', 'kv-logo')</a>
+					<a href="/">@svg('img/kv-logo-full-white.svg', 'kv-logo')</a>
 					<p>Kasper Versteeg</p>
 					<p>Webdeveloper</p>
 				</div>

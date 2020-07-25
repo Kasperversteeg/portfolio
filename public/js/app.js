@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var typewriter = document.getElementById('typewriter');
 
   if (typewriter) {
-    var elemText = ["< <span>Webdeveloper </span>/<span> Multimedia expert </span>> "];
+    var elemText = ["< Webdeveloper / Multimedia expert > "];
     var period = 75;
     new TxtType(typewriter, elemText, period);
   }
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var elem = sections[i]; // fade in the overlay
 
     fadeIn(elem, x);
-    x = x + 600;
+    x = x + 300;
   }
 }); // do stuff to hover class elements
 

@@ -1,0 +1,78 @@
+[33mcommit a7a499ed646e318dd5fc27189c2d73047d9bc74b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Tue Mar 3 21:40:01 2020 +0100
+
+    first working website
+
+[33mcommit 0d2f2c4837ef1fe48af702c07dd55ac07aec85d0[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Wed Feb 12 08:00:31 2020 +0100
+
+    javascript update
+
+[33mcommit 4438f2e64c7dd60385dab6565d545b877dc7ffc9[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Thu Feb 6 22:21:14 2020 +0100
+
+    first release
+
+[33mcommit 18b4e97ab372955fd216113846e4d1b358cafd4d[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Thu Feb 6 00:07:16 2020 +0100
+
+    v1 allmost done
+
+[33mcommit 1a0d0044bd186aaba52a55642aa675854b02bd05[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Wed Feb 5 08:19:15 2020 +0100
+
+    javascript updated
+
+[33mcommit 4ac7dd7310bd3fe8a417110a57346f5ccc1f1666[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Sun Feb 2 23:10:40 2020 +0100
+
+    nick is stom
+
+[33mcommit 8251157bb58d0c69fccd1132db3e0ec73023bf7f[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Thu Jan 30 00:06:38 2020 +0100
+
+    additional css and css structure added
+
+[33mcommit 9eb6962109e674521acd7b72f1c6c7ae8d2b5c3d[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Tue Jan 28 22:05:13 2020 +0100
+
+    added some tekst and css
+
+[33mcommit b29b158565e13a525702c6b7f4356fc060d67f44[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Mon Jan 27 00:29:29 2020 +0100
+
+    added structure
+
+[33mcommit 5c3552bc12f147fcae4e2cabe45bb7369f7393b3[m
+Merge: 34c113f 89e9a57
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Sat Jan 25 22:14:51 2020 +0100
+
+    Merge branch 'master' of https://github.com/kasperversteeg/portfolio
+
+[33mcommit 34c113f17fa13474ae018fcf34a5fdccf97195f6[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Sat Jan 25 22:13:24 2020 +0100
+
+    first real commit
+
+[33mcommit 89e9a570d39bd3c4defdb020470e22852c4078c0[m
+Author: Kasper Versteeg <kasperversteeg@MacBook-Pro-van-Kasper.local>
+Date:   Wed Jan 22 22:07:55 2020 +0100
+
+    readme change
+
+[33mcommit f8cb00b5aecc13ae4948eff44dbe0c835111586d[m
+Author: Kasper <kasperversteeg@gmail.com>
+Date:   Wed Jan 22 21:48:29 2020 +0100
+
+    first commit

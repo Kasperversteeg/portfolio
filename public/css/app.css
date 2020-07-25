@@ -1,10 +1,11 @@
 nav {
+  height: 90px;
   box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
 }
 
 nav .main-logo svg {
-  padding-top: 0.6rem;
-  max-width: 21.5rem;
+  margin-top: 0.8rem;
+  height: 80%;
 }
 
 nav .main-nav .active {
@@ -16,7 +17,7 @@ nav .main-nav a {
   font-size: 1.8rem;
   display: inline-block;
   color: #AF1B1B;
-  padding: 4rem 1.5rem;
+  padding: 2.9rem 1.5rem;
 }
 
 nav .main-nav ul {

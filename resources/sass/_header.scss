@@ -5,14 +5,17 @@
 
 // nav css
 nav {
+	height:90px;
 	// border-bottom: 0.25px solid $prim-color;
 	-webkit-box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
     -moz-box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
     box-shadow: 0 0 5px rgba(175, 27, 27, 0.2);
 	.main-logo{
 		svg{
-			padding-top:.6rem;
-			max-width: 21.5rem;
+			margin-top:.8rem;
+			// padding-top:1rem;
+			// max-width: 21.5rem;
+			height:80%;
 		}
 	}
 	.main-nav {
@@ -26,7 +29,7 @@ nav {
 			font-size: 1.8rem;
 			display: inline-block;
 			color: $prim-color;
-			padding: 4rem 1.5rem;
+			padding: 2.9rem 1.5rem;
 		}
 		ul{
 			display: flex;
