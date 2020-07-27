@@ -72,6 +72,7 @@
             </div>
          </div>
       </footer>
+      <modal v-show="modalOpen" />
 
    </div>
 </body>

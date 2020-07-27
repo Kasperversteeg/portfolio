@@ -1,13 +1,9 @@
 <template>
   <div class="grid grid-cols-4 gap-2">
 
-      <div class="border border-primary">
-         <div class="">
-            <img src="img/port-3-thumb.png">
-         </div>
-         <div class="">
-            <h3>Kasper Versteeg</h3>
-         </div>
+      <div class="border border-primary" v-for="portfolioItem in portfolioItems" :key='portfolioItem.id'>
+         {{ portfolioItem.title }}
+         <a class="cursor-pointer" @click="$emit('open-modal')">{{ portfolioItem.url }}</a>
       </div>
 
    </div>

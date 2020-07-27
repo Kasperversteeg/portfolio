@@ -25,7 +25,7 @@
 			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
       </div>
       
-		<portfolio />
+		<portfolio v-on:open-modal="toggleModal"/>
 	</div>
 
 	<div class="row divider"></div>
