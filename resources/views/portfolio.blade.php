@@ -2,7 +2,7 @@
 @extends('master')
 
 {{-- insert title --}}
-@section('title', 'Home')
+@section('title', 'Portfolio')
 
 {{-- main content --}}
 @section('content')

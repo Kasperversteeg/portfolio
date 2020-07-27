@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+      factory(App\PortfolioItem::class)->create(['title' => 'Kasper', 'url' => 'google.com', 'imgUrl' => 'test', 'description' => 'Lorem ipsum']);
         // $this->call(UsersTableSeeder::class);
     }
 }

@@ -1,3 +1,39 @@
 @tailwind base;
+h1 {
+    @apply text-3xl font-bold;
+}
+
+h2 {
+    @apply text-3xl text-primary;
+}
+
+h3 {
+    @apply text-lg;
+}
+
+h4 {
+    @apply text-base;
+}
+
+h5 {
+    @apply font-bold;
+}
+
 @tailwind components;
+.divider {
+    @apply pt-5 mb-5 border-b border-primary w-9/10 mx-auto;
+}
+
+.btn {
+    @apply px-3 py-2 border-transparent border-2 font-medium rounded inline-block;
+}
+
+.btn-primary {
+    @apply bg-primary text-white transition ease-out duration-200;
+}
+
+.btn-primary:hover {
+    @apply bg-white text-primary border-primary;
+}
+
 @tailwind utilities;

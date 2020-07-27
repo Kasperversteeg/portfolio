@@ -1,6 +1,7 @@
 window.Vue = require('vue');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('Navigation', require('./components/MainNav.vue').default);
+Vue.component('Portfolio', require('./components/Portfolio.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -10,4 +11,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    mounted() {}
 });

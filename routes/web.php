@@ -10,9 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('p-items', 'PortfolioItemController@index');
 
 Route::get('/', function () {
-    return view('home');
+   return view('home');
 });
 
 Route::get('portfolio', function () {

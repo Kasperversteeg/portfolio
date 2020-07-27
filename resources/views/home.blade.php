@@ -6,25 +6,15 @@
 
 {{-- main content --}}
 @section('content')
-	<div class="content-section">
-		<div class="row home-header">
-			<h2 id="typewriter">{{--  --}}</h2>
-		</div>
-		<div class="row">
-			<div class="column column-80">
-				<p>Welkom op de website, Ik ben <a class="a-inline" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
-				<p>Heeft u hulp nodig bij het creëren van een website? Neem snel contact met me op!</p>
-			</div>
-			<div class="column column-20 main-cta">
-				<div>
-					<a class="button" id="main-cta-button" href="mailto:info@kasperversteeg.com">Mail mij</a>
-				</div>
-			</div>
+      <h1>Webdeveloper / Multimedia expert</h1>
+			<div class="">
+				<p>Welkom op de website, Ik ben <a class="text-primary font-medium" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
+				<p class="mt-2">Heeft u hulp nodig bij het creëren van een website? Neem snel contact met me op!</p>
+			<a class="btn btn-primary" href="mailto:info@kasperversteeg.com">Mail mij</a>
 			
 		</div>
-	</div>
 	
-	<div class="row divider"></div>
+	<div class="divider"></div>
 
 	{{-- featured portfolio items --}}
 	<div class="content-section">
@@ -35,41 +25,7 @@
 			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
       </div>
       
-		<div class="grid grid-cols-4 gap-2">
-			<div class="">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-3-thumb.png')}}">
-				</div>
-				<div class="featured-content">
-					<h3>Kasper Versteeg</h3>
-				</div>
-			</div>
-
-			<div class="">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-2-thumb.png')}}">
-				</div>
-				<div class="featured-content">
-					<h3>Peluche</h3>
-				</div>
-			</div>
-			<div class="">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-1-thumb.png')}}">
-				</div>
-				<div class="featured-content">
-					<h3>Pride and joy labradoodles</h3>
-				</div>
-			</div>
-			<div class="">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-1-thumb.png')}}">
-				</div>
-				<div class="featured-content">
-					<h3>Bernerdoodles</h3>
-				</div>
-			</div>
-		</div>
+		<portfolio />
 	</div>
 
 	<div class="row divider"></div>
