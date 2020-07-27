@@ -13,12 +13,10 @@ module.exports = {
                 '1/2': '50%',
                 '3/4': '75%'
             },
-            width: {
-                '9/10': '90%'
-            },
             colors: {
                 primary: '#AF1B1B',
                 secondary: '#575757',
+                tertiary: '#606c76',
                 text: '#343b42'
             }
         }

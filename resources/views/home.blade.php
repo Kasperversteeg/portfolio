@@ -17,28 +17,22 @@
 	<div class="divider"></div>
 
 	{{-- featured portfolio items --}}
-	<div class="content-section">
-		<div class="row">
-			<h2>Recente projecten</h2>
-		</div>
-		<div class="row">
-			<p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
-      </div>
+	<div>
+      <h2>Recente projecten</h2>
+      <p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
       
 		<portfolio v-on:open-modal="toggleModal"/>
 	</div>
 
-	<div class="row divider"></div>
+	<div class="divider"></div>
 
-	<div class="content-section">
-		<div class="row">
-			<h2>Versies</h2>
-		</div>
-		<div class="row main-versions">
-			<p>Hier komt een overzicht van de het opbouwen van de website, maar hier ben ik nog mee bezig. Nog even gedult dus!</p>
-		</div>
-	</div>
-
+   <div>
+      <h2>Project: ReserV</h2>
+      <p>Tijdens mijn afstudeer project ben ik begonnen met het ontwikkelen van een web applicatie voor horeca bedrijven. 
+      Deze applicatie neemt veel werk uit het handen van de werknemers wat betreft het registreren van de reserveringen. <br>
+      De applicatie wordt eind 2020 gelanceerd</p>
+      <p><a class="text-primary font-medium" href="https://www.youtube.com/watch?v=QbmAI9Bx8KE" target="_blank">Klik hier</a> voor een preview video</p>
+   </div>
 
 
 @endsection

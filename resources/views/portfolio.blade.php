@@ -14,28 +14,7 @@
 		<div class="row">
 			<p>Een overzicht van gemaakte projecten</p>
 		</div>
-		<div class="row port-row">
-			<div class="column column-25 port-item">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-3-thumb.png')}}">
-				</div>
-			</div>
-			<div class="column column-25 port-item">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-2-thumb.png')}}">
-				</div>
-			</div>
-			<div class="column column-25 port-item">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-1-thumb.png')}}">
-				</div>
-			</div>
-			<div class="column column-25 port-item">
-				<div class="port-img-wrap has-hover">
-					<img src="{{asset('img/port-1-thumb.png')}}">
-				</div>
-			</div>
-		</div>
+      <portfolio v-on:open-modal="toggleModal"/>
 	</div>
 
 
