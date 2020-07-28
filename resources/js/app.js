@@ -13,15 +13,21 @@ Vue.component('Icon', require('./components/Icon.vue').default);
 
 const app = new Vue({
     el: '#app',
-    data () {
+    data() {
         return {
-            modalOpen: false
+            modalOpen: false,
+            modalData: {}
         }
     },
     methods: {
-        toggleModal(){
+        toggleModal(e) {
+            if (e) {
+                this.modalData = e;
+            } else {
+                this.modalData = {};
+            }
             this.modalOpen = !this.modalOpen;
-            console.log('Toggling modal, '+ this.modalOpen);
+            console.log('Toggling modal, ' + this.modalOpen);
         }
     }
 });

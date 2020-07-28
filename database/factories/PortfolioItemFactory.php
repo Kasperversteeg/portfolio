@@ -9,7 +9,8 @@ $factory->define(PortfolioItem::class, function (Faker $faker) {
     return [
       'title' => $faker->name,
       'url' => $faker->url,
-      'imgUrl' => $faker->url,
-      'description' => $faker->text
+      'img' => $faker->url,
+      'description' => $faker->text,
+      'thumb' => $faker->url
     ];
 });

@@ -1,9 +1,9 @@
 <template>
   <div class="py-4 grid grid-cols-4 gap-2">
-      <div class="border border-primary" v-for="portfolioItem in portfolioItems" :key='portfolioItem.id'>
-         <div class="" @click="$emit('open-modal')">
-            {{ portfolioItem.title }}
-            <a class="cursor-pointer" >{{ portfolioItem.url }}</a>
+      <div class="cursor-pointer" v-for="item in portfolioItems" :key='item.id'  @click="$emit('open-modal', item)">
+         <div class="">
+            {{ item.title }}
+            <img :src="'img/'+item.thumb+'.png'" />
          </div>
       </div>
    </div>
@@ -30,7 +30,6 @@ export default {
       }
    },
    created (){
-      console.log('getting items');
       this.getItems();
    }
 }

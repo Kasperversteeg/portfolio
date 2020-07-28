@@ -23,24 +23,28 @@
 	<div class="divider"></div>
 
 	<div class="flex">
-			<div class="flex-1">
-				<h3>Contact:</h3>		
-				<ul>
-					<li class="">
-                  <a href="tel:+31611119944"><icon id="fb" color="primary" /><span>+31 6 11 11 99 44<span></a>
+			<div class="flex-1 flex justify-center">
+            <div>
+               <h3>Contact:</h3>		
+               <ul>
+                  <li class="p-2 hover:underline">
+                     <a href="tel:+31611119944"><icon id="tel" name="+31 6 11 11 99 44"></icon></a>
+                     </li>
+                  <li class="p-2 hover:underline">
+                     <a href="mailto:info@kasperversteeg.com"><icon id="mail" name="info@kasperversteeg.com"></icon></a>
                   </li>
-					<li class="w-10">
-                  <a href="mailto:info@kasperversteeg.com"><img src="img/pictograms/pict-mail.svg" alt="e-mail" /><span>info@kasperversteeg.com</span></a>
-               </li>
-				</ul>
+               </ul>
+            </div>
 			</div>
-			<div class="flex-1">
-				<h3>Socials:</h3>
-				<ul>
-					<li class="w-10"><a href="https://www.facebook.com/kasper.versteeg.1"><img src="img/pictograms/pict-fb.svg" alt="Facebook" /><span>Facebook</span></a></li>
-					<li class="w-10"><a href="https://www.linkedin.com/in/kasper-versteeg"><img src="img/pictograms/pict-li.svg" alt="LinkedIn" /><span>LinkedIn</span></a></li>
-					<li class="w-10"><a href="https://github.com/Kasperversteeg"><icon id="gh" color="primary" /><<span>GitHub</span></a></li>
-				</ul>
+			<div class="flex-1 flex justify-center">
+            <div>
+               <h3>Socials:</h3>
+               <ul>
+                  <li class="p-2 hover:underline"><a href="https://www.facebook.com/kasper.versteeg.1"><icon id="facebook" name="Facebook"></icon></a></li>
+                  <li class="p-2 hover:underline"><a href="https://www.linkedin.com/in/kasper-versteeg"><icon id="linkedin" name="LinkedIn"></icon></a></li>
+                  <li class="p-2 hover:underline"><a href="https://github.com/Kasperversteeg"><icon id="github" name="Github"></icon></a></li>
+               </ul>
+            </div>
 			</div>
 	</div>
 
