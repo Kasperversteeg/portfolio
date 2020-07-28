@@ -72,7 +72,7 @@
             </div>
          </div>
       </footer>
-      <modal v-show="modalOpen" />
+      <modal v-show="modalOpen" v-on:close-modal="toggleModal"/>
 
    </div>
 </body>

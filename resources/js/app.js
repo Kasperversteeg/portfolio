@@ -3,6 +3,7 @@ window.Vue = require('vue');
 Vue.component('Navigation', require('./components/MainNav.vue').default);
 Vue.component('Portfolio', require('./components/Portfolio.vue').default);
 Vue.component('Modal', require('./components/Modal.vue').default);
+Vue.component('Icon', require('./components/Icon.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,7 +21,7 @@ const app = new Vue({
     methods: {
         toggleModal(){
             this.modalOpen = !this.modalOpen;
-            console.log('opening modal');
+            console.log('Toggling modal, '+ this.modalOpen);
         }
     }
 });

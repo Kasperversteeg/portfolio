@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-4 gap-2">
-
+  <div class="py-4 grid grid-cols-4 gap-2">
       <div class="border border-primary" v-for="portfolioItem in portfolioItems" :key='portfolioItem.id'>
-         {{ portfolioItem.title }}
-         <a class="cursor-pointer" @click="$emit('open-modal')">{{ portfolioItem.url }}</a>
+         <div class="" @click="$emit('open-modal')">
+            {{ portfolioItem.title }}
+            <a class="cursor-pointer" >{{ portfolioItem.url }}</a>
+         </div>
       </div>
-
    </div>
 </template>
 
@@ -37,5 +37,6 @@ export default {
 </script>
 
 <style>
+
 
 </style>

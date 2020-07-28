@@ -19709,6 +19709,10 @@ h5 {
           transition-delay: 1000ms;
 }
 
+.fill-primary svg {
+  fill: red;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

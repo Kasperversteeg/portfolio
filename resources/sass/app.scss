@@ -37,3 +37,9 @@ h5 {
 }
 
 @tailwind utilities;
+
+.fill-primary {
+    svg {
+        fill: red;
+    }
+}

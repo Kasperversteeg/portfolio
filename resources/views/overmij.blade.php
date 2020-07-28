@@ -26,8 +26,8 @@
 			<div class="flex-1">
 				<h3>Contact:</h3>		
 				<ul>
-					<li class="w-10">
-                  <a href="tel:+31611119944"><img src="img/pictograms/pict-tel.svg" alt="telefoon" /><span>+31 6 11 11 99 44<span></a>
+					<li class="">
+                  <a href="tel:+31611119944"><icon id="fb" color="primary" /><span>+31 6 11 11 99 44<span></a>
                   </li>
 					<li class="w-10">
                   <a href="mailto:info@kasperversteeg.com"><img src="img/pictograms/pict-mail.svg" alt="e-mail" /><span>info@kasperversteeg.com</span></a>
@@ -39,7 +39,7 @@
 				<ul>
 					<li class="w-10"><a href="https://www.facebook.com/kasper.versteeg.1"><img src="img/pictograms/pict-fb.svg" alt="Facebook" /><span>Facebook</span></a></li>
 					<li class="w-10"><a href="https://www.linkedin.com/in/kasper-versteeg"><img src="img/pictograms/pict-li.svg" alt="LinkedIn" /><span>LinkedIn</span></a></li>
-					<li class="w-10"><a href="https://github.com/Kasperversteeg"><img src="img/pictograms/pict-gh.svg" alt="Github" /><span>GitHub</span></a></li>
+					<li class="w-10"><a href="https://github.com/Kasperversteeg"><icon id="gh" color="primary" /><<span>GitHub</span></a></li>
 				</ul>
 			</div>
 	</div>
