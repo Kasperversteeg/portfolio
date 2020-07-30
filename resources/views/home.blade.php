@@ -7,7 +7,7 @@
 {{-- main content --}}
 @section('content')
     <h1>Webdeveloper / Multimedia expert</h1>
-	<p>Welkom op de website, Ik ben <a class="text-primary font-medium" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
+	<p>Welkom op de website, Ik ben <a class="text-primary font-medium hover:underline" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
 	<div class="flex justify-between pt-2">
 		<p class="mt-2">Heeft u hulp nodig bij het creëren van een website? Neem snel contact met me op!</p>
 		<a class="btn btn-primary" href="mailto:info@kasperversteeg.com">Mail mij</a>
@@ -18,7 +18,7 @@
 	{{-- featured portfolio items --}}
 	<div>
       <h2>Recente projecten</h2>
-      <p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="a-inline" href="portfolio">portfolio</a> pagina</p>
+      <p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="text-primary font-medium hover:underline" href="portfolio">portfolio</a> pagina</p>
       
 		<portfolio v-on:open-modal="toggleModal"/>
 	</div>

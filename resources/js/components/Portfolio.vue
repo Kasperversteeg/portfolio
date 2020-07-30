@@ -1,8 +1,8 @@
 <template>
-  <div class="py-4 grid grid-cols-4 gap-2">
-      <div class="cursor-pointer" v-for="item in portfolioItems" :key='item.id'  @click="$emit('open-modal', item)">
+  <div class="py-4 grid grid-cols-4 gap-4">
+      <div class="cursor-pointer shadow p-3" v-for="item in portfolioItems" :key='item.id'  @click="$emit('open-modal', item)">
          <div class="">
-            {{ item.title }}
+            <!-- <h1>{{ item.title }}</h1> -->
             <img :src="'img/'+item.thumb+'.png'" />
          </div>
       </div>

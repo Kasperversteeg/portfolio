@@ -6,9 +6,9 @@
           <h1>{{ this.data.title }}</h1>
           <a class="cursor-pointer text-3xl" @click="$emit('close-modal')">&times</a>
         </div>
-        <img src="" alt="">
-        <h3>Url</h3>
-        <p>Description</p>
+        <img :src=this.data.img alt="">
+        <a :href=this.data.url>{{ this.data.url }}</a>
+        <p>{{ this.data.description }}</p>
       </div>
     </div>
   </transition>

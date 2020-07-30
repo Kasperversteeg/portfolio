@@ -2065,10 +2065,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     };
   },
   methods: {
-    getItems: function () {
-      var _getItems = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+    getItems: function getItems() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
         var response;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
@@ -2080,7 +2080,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 3:
                 response = _context.sent;
-                this.portfolioItems = response.data;
+                _this.portfolioItems = response.data;
                 _context.next = 10;
                 break;
 
@@ -2094,15 +2094,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return _context.stop();
             }
           }
-        }, _callee, this, [[0, 7]]);
-      }));
-
-      function getItems() {
-        return _getItems.apply(this, arguments);
-      }
-
-      return getItems;
-    }()
+        }, _callee, null, [[0, 7]]);
+      }))();
+    }
   },
   created: function created() {
     this.getItems();
@@ -2142,7 +2136,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n  -webkit-transition: opacity 0.25s ease-out;\n  transition: opacity 0.25s ease-out;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n}\r\n", ""]);
+exports.push([module.i, ".fade-enter-active, .fade-leave-active {\n  -webkit-transition: opacity 0.25s ease-out;\n  transition: opacity 0.25s ease-out;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n}\n", ""]);
 
 // exports
 
@@ -2456,6 +2450,24 @@ var runtime = (function (exports) {
   var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
   var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
 
+  function define(obj, key, value) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+    return obj[key];
+  }
+  try {
+    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
+    define({}, "");
+  } catch (err) {
+    define = function(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+
   function wrap(innerFn, outerFn, self, tryLocsList) {
     // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
     var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
@@ -2526,16 +2538,19 @@ var runtime = (function (exports) {
     Generator.prototype = Object.create(IteratorPrototype);
   GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
   GeneratorFunctionPrototype.constructor = GeneratorFunction;
-  GeneratorFunctionPrototype[toStringTagSymbol] =
-    GeneratorFunction.displayName = "GeneratorFunction";
+  GeneratorFunction.displayName = define(
+    GeneratorFunctionPrototype,
+    toStringTagSymbol,
+    "GeneratorFunction"
+  );
 
   // Helper for defining the .next, .throw, and .return methods of the
   // Iterator interface in terms of a single ._invoke method.
   function defineIteratorMethods(prototype) {
     ["next", "throw", "return"].forEach(function(method) {
-      prototype[method] = function(arg) {
+      define(prototype, method, function(arg) {
         return this._invoke(method, arg);
-      };
+      });
     });
   }
 
@@ -2554,9 +2569,7 @@ var runtime = (function (exports) {
       Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
     } else {
       genFun.__proto__ = GeneratorFunctionPrototype;
-      if (!(toStringTagSymbol in genFun)) {
-        genFun[toStringTagSymbol] = "GeneratorFunction";
-      }
+      define(genFun, toStringTagSymbol, "GeneratorFunction");
     }
     genFun.prototype = Object.create(Gp);
     return genFun;
@@ -2570,7 +2583,7 @@ var runtime = (function (exports) {
     return { __await: arg };
   };
 
-  function AsyncIterator(generator) {
+  function AsyncIterator(generator, PromiseImpl) {
     function invoke(method, arg, resolve, reject) {
       var record = tryCatch(generator[method], generator, arg);
       if (record.type === "throw") {
@@ -2581,14 +2594,14 @@ var runtime = (function (exports) {
         if (value &&
             typeof value === "object" &&
             hasOwn.call(value, "__await")) {
-          return Promise.resolve(value.__await).then(function(value) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
             invoke("next", value, resolve, reject);
           }, function(err) {
             invoke("throw", err, resolve, reject);
           });
         }
 
-        return Promise.resolve(value).then(function(unwrapped) {
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
           // When a yielded Promise is resolved, its final value becomes
           // the .value of the Promise<{value,done}> result for the
           // current iteration.
@@ -2606,7 +2619,7 @@ var runtime = (function (exports) {
 
     function enqueue(method, arg) {
       function callInvokeWithMethodAndArg() {
-        return new Promise(function(resolve, reject) {
+        return new PromiseImpl(function(resolve, reject) {
           invoke(method, arg, resolve, reject);
         });
       }
@@ -2646,9 +2659,12 @@ var runtime = (function (exports) {
   // Note that simple async functions are implemented on top of
   // AsyncIterator objects; they just return a Promise for the value of
   // the final result produced by the iterator.
-  exports.async = function(innerFn, outerFn, self, tryLocsList) {
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
     var iter = new AsyncIterator(
-      wrap(innerFn, outerFn, self, tryLocsList)
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
     );
 
     return exports.isGeneratorFunction(outerFn)
@@ -2823,7 +2839,7 @@ var runtime = (function (exports) {
   // unified ._invoke helper method.
   defineIteratorMethods(Gp);
 
-  Gp[toStringTagSymbol] = "Generator";
+  define(Gp, toStringTagSymbol, "Generator");
 
   // A Generator should always return itself as the iterator object when the
   // @@iterator function is called on it. Some browsers' implementations of the
@@ -4157,11 +4173,13 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c("img", { attrs: { src: "", alt: "" } }),
+          _c("img", { attrs: { src: this.data.img, alt: "" } }),
           _vm._v(" "),
-          _c("h3", [_vm._v("Url")]),
+          _c("a", { attrs: { href: this.data.url } }, [
+            _vm._v(_vm._s(this.data.url))
+          ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Description")])
+          _c("p", [_vm._v(_vm._s(this.data.description))])
         ])
       ]
     )
@@ -4191,13 +4209,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "py-4 grid grid-cols-4 gap-2" },
+    { staticClass: "py-4 grid grid-cols-4 gap-4" },
     _vm._l(_vm.portfolioItems, function(item) {
       return _c(
         "div",
         {
           key: item.id,
-          staticClass: "cursor-pointer",
+          staticClass: "cursor-pointer shadow p-3",
           on: {
             click: function($event) {
               return _vm.$emit("open-modal", item)
@@ -4206,7 +4224,6 @@ var render = function() {
         },
         [
           _c("div", {}, [
-            _vm._v("\n          " + _vm._s(item.title) + "\n          "),
             _c("img", { attrs: { src: "img/" + item.thumb + ".png" } })
           ])
         ]
@@ -4296,7 +4313,12 @@ function normalizeComponent (
     options._ssrRegister = hook
   } else if (injectStyles) {
     hook = shadowMode
-      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      ? function () {
+        injectStyles.call(
+          this,
+          (options.functional ? this.parent : this).$root.$options.shadowRoot
+        )
+      }
       : injectStyles
   }
 
@@ -4305,7 +4327,7 @@ function normalizeComponent (
       // for template-only hot-reload because in that case the render fn doesn't
       // go through the normalizer
       options._injectStyles = hook
-      // register for functioal component in vue file
+      // register for functional component in vue file
       var originalRender = options.render
       options.render = function renderWithStyleInjection (h, context) {
         hook.call(context)
@@ -16718,8 +16740,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\kaspe\OneDrive\Documenten\projects\portfolio\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\kaspe\OneDrive\Documenten\projects\portfolio\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/kasperversteeg/code/portfolio/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/kasperversteeg/code/portfolio/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
