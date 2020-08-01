@@ -14,7 +14,7 @@
 		<div class="row">
 			<p>Een overzicht van gemaakte projecten</p>
 		</div>
-      <portfolio v-on:open-modal="toggleModal"/>
+      <portfolio />
 	</div>
 
 

@@ -18,6 +18,13 @@ class PortfolioItemController extends Controller
          return response()->json($all, 200);
     }
 
+    public function featured() 
+    {
+       $featured = PortfolioItem::orderBy('CREATED_AT', 'desc')->limit(4)->get();
+       return response()->json($featured, 200);
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

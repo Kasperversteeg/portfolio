@@ -1,6 +1,6 @@
 <template>
   <div class="py-4 grid grid-cols-4 gap-4">
-      <div class="has-hover relative cursor-pointer shadow p-3" v-for="(item, index) in allPortfolioItems" :key='index'  @click="open(index)">
+      <div class="has-hover relative cursor-pointer shadow p-3" v-for="(item, index) in portfolioItems" :key='index'  @click="open(index)">
             <div class="content-overlay absolute inset-0 bg-primary w-full h-full opacity-0 transition-all duration-200 ease-in-out"></div>
             <img :src="'img/'+item.thumb+'.png'" />   
             <div class="-translate-y-1/2 -translate-x-1/2 content-details text-white absolute text-center px-1 opacity-0 w-full transition-all duration-300 ease-in-out">
@@ -15,16 +15,16 @@
 import { mapActions, mapState } from 'vuex';
 
 export default {
-   name: 'Portfolio',
+   name: 'featured',
    methods:{
-      ...mapActions('modal', ['openModal']), 
+      ...mapActions('modal', ['openModalFeatured']), 
       open(index){
-         this.openModal(index);      
+         this.openModalFeatured(index);      
       },
-   },
-   computed: mapState({allPortfolioItems: state=>state.portfolioItems.portfolioItems}),
+},
+   computed: mapState({portfolioItems: state=>state.portfolioItems.featured}),
    created (){
-      this.$store.dispatch('portfolioItems/fetchPortfolioItems')
+      this.$store.dispatch('portfolioItems/fetchFeatured')
    }
 }
 </script>

@@ -19,6 +19,20 @@ class DatabaseSeeder extends Seeder
           'thumb' => 'peluche-thumb'
         ]);
       factory(App\PortfolioItem::class)->create([
+         'title' => 'ReserV Website', 
+         'url' => 'reserv-app.nl', 
+         'img' => 'reserv-img', 
+         'description' => 'Reserv website omschrijving', 
+         'thumb' => 'peluche-thumb'
+         ]);
+      factory(App\PortfolioItem::class)->create([
+         'title' => 'ReserV Website', 
+         'url' => 'reserv-app.nl', 
+         'img' => 'reserv-img', 
+         'description' => 'Reserv website omschrijving', 
+         'thumb' => 'peluche-thumb'
+      ]);
+      factory(App\PortfolioItem::class)->create([
           'title' => 'ReserV', 
           'url' => 'reserv-app.nl/demo', 
           'img' => 'reserv-app-img', 

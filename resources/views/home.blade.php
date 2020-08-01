@@ -20,7 +20,7 @@
       <h2>Recente projecten</h2>
       <p>Hieronder ziet u een overzicht van mijn meest recente projecten, mocht u meer willen zien dan kunt u verder kijken op de <a class="text-primary font-medium hover:underline" href="portfolio">portfolio</a> pagina</p>
       
-		<portfolio v-on:open-modal="toggleModal"/>
+		<featured />
 	</div>
 
 	<div class="divider"></div>
