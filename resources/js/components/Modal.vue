@@ -1,25 +1,21 @@
 <template>
   <transition name="fade">
     <div class="fixed w-full h-screen bg-black bg-opacity-25 flex justify-center items-center" @click.self="closeModal">
-       <div class="flex w-3/4 items-center">
-          <div class="p-2 bg-white text-primary font-bold mr-1">
-            <button @click="prev">Prev</button>
+       <div class="flex flex-row flex-wrap lg:flex-no-wrap,s w-full lg:w-4/5 xl:w-3/4 items-center justify-center">
+          <div class="p-2 bg-white text-primary font-bold text-center mx-1  w-1/4 lg:w-auto rounded">
+            <button @click="prev">Vorige</button>
           </div>
-         <div class="bg-white rounded p-4 flex-1 relative">
+         <div class="relative bg-white rounded p-4 w-full m-1 lg:flex-1 order-first lg:order-none">
             <div class="absolute top-0 right-0 px-4 cursor-pointer z-40" @click="closeModal">
-               <a class=" text-3xl ">&times</a>
+               <a class="text-3xl">&times</a>
             </div>
-            <div v-if="!featured" class="relative">
-               <ContentSlide v-for="(item, index) in allPortfolioItems" :key='index' :id='item.id' ref='visable'>
-               </ContentSlide>
-            </div>
-            <div v-if="featured" class="relative">
-               <ContentSlide v-for="(item, index) in featuredItems" :key='index' :id='item.id' ref='visable' :featured="featured">
+            <div class="relative">
+               <ContentSlide v-for="(item, index) in portfolioItems" :key='index' :id='item.id' ref='visable'>
                </ContentSlide>
             </div>
          </div>
-         <div class="p-2 bg-white text-primary font-bold ml-1">
-            <button @click="next">Next</button>
+         <div class="p-2 bg-white text-primary font-bold text-center m-1 w-1/4 lg:w-auto rounded">
+            <button @click="next">Volgende</button>
          </div>
        </div>
 
@@ -39,7 +35,7 @@ export default {
    methods:{
       ...mapActions('modal', ['fetchActiveIndex', 'closeModal']),
       changeItemTo(from, to) {
-         console.log('current : ' + from + ' switching to : ' + to);
+         // console.log('current : ' + from + ' switching to : ' + to);
          // Find out the direction we're moving.
          // This is useful for animations.
          const direction = from < to ? `left` : `right`;
@@ -70,16 +66,11 @@ export default {
    },
    computed: {
      maxIndex(){
-        if(this.featured){ 
-            return this.featuredItems.length;
-        }
-        return this.allPortfolioItems.length;
+        return this.portfolioItems.length;
      },
       ...mapState({
-         activeIndex : state => state.modal.activeIndex,
-         allPortfolioItems : state => state.portfolioItems.portfolioItems,
-         featuredItems: state=> state.portfolioItems.featured,
-         featured: state=> state.modal.featured
+         activeIndex: state => state.modal.activeIndex,
+         portfolioItems: state=> state.portfolioItems.items
       })
    }
 }

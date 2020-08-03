@@ -11,6 +11,7 @@
 |
 */
 Route::get('p-items', 'PortfolioItemController@index');
+Route::get('portfolio-items', 'PortfolioItemController@index');
 Route::get('featured-items', 'PortfolioItemController@featured');
 
 Route::get('/', function () {

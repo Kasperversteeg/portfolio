@@ -1,7 +1,6 @@
 const state = {
     modalShowing: false,
     activeIndex: 0,
-    featured: false
 };
 
 const getters = {
@@ -10,17 +9,6 @@ const getters = {
 };
 
 const actions = {
-    openModalFeatured({ commit, dispatch }, index) {
-        if (index || index === 0) {
-            commit('setFeatured', true);
-            console.log('opening modal with index: ' + index);
-            commit('openModal', index);
-            // show portfolioitem with id
-            dispatch('portfolioItems/showFeaturedItemWithIndex', index, { root: true });
-        } else {
-            console.log('Cannot open without index');
-        }
-    },
     openModal({ commit, dispatch }, index) {
         if (index || index === 0) {
             console.log('opening modal with index: ' + index);
@@ -35,14 +23,14 @@ const actions = {
         const currentIndex = state.activeIndex;
         commit('closeModal');
         setTimeout(() => { dispatch('portfolioItems/hideItemWithIndex', currentIndex, { root: true }) }, 200);
+
     },
     fetchActiveIndex({ commit }, index) {
         commit('updateActiveIndex', index);
-    }
+    },
 };
 
 const mutations = {
-    setFeatured: (state, bool) => state.featured = bool,
     openModal: function(state, index) {
         state.modalShowing = true;
         state.activeIndex = index;
@@ -51,9 +39,8 @@ const mutations = {
         console.log('closing modal view and resetting activeIndex');
         state.activeIndex = 0;
         state.modalShowing = false;
-        state.featured = false;
     },
-    updateActiveIndex: (state, index) => (state.activeIndex = index)
+    updateActiveIndex: (state, index) => (state.activeIndex = index),
 };
 
 export default {

@@ -6,11 +6,11 @@
 
 {{-- main content --}}
 @section('content')
-    <h1>Webdeveloper / Multimedia expert</h1>
+   <h1>Webdeveloper / Multimedia expert</h1>
 	<p>Welkom op de website, Ik ben <a class="text-primary font-medium hover:underline" href="overmij">Kasper Versteeg</a> en ik ben een webdeveloper die zich voornamelijk bezighoudt met het bouwen, optimaliseren van websites. Op het gebied van gebruiksvriendelijkheid en gemak van de website excelleer ik en pas dit toe op alle websites die ik ontwikkel of renoveer.</p>
-	<div class="flex justify-between pt-2">
+	<div class="flex flex-col md:flex-row md:justify-between pt-2">
 		<p class="mt-2">Heeft u hulp nodig bij het creëren van een website? Neem snel contact met me op!</p>
-		<a class="btn btn-primary" href="mailto:info@kasperversteeg.com">Mail mij</a>
+		<a class="btn btn-primary mt-4 md:mt-0 text-center" href="mailto:info@kasperversteeg.com">Mail mij</a>
 	</div>
 	
 	<div class="divider"></div>

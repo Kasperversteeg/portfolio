@@ -7,13 +7,13 @@
 {{-- main content --}}
 @section('content')
 
-	<div class="flex">
-      <div class="w-4/12">
+<div class="flex flex-col md:flex-row">
+   <div class="flex-shrink md:w-4/12">
          <div class="rounded-full h-64 w-64 overflow-hidden mx-auto">
           <img class="w-auto h-full max-w-none" src="img/om-kasper.jpg">
          </div>
       </div>
-      <div class="w-8/12">
+      <div class="flex-none md:w-8/12 px-2">
          <h3>Over mij</h3>
          <p>Ik ben Kasper Versteeg, 31 jaar oud en ik ben een webdeveloper. Ik ben meer dan 15 jaar actief geweest in de Horeca branche maar ik heb besloten dat het tijd was voor wat nieuws. Ik hou me voornamelijk bezig met het ontwikkelen van websites voor de kleinere bedrijven. Ik heb me gespecialiseerd op UX-design, dit houdt in dat ik er voor zorg dat de website gebruiksvriendelijk is en dat het doel van de website duidelijk wordt.
          Vragen? Neem gerust contact met me op!</p>
@@ -23,7 +23,7 @@
 	<div class="divider"></div>
 
 	<div class="flex">
-			<div class="flex-1 flex justify-center">
+			<div class="flex-1 flex md:justify-center">
             <div>
                <h3>Contact:</h3>		
                <ul>
@@ -36,7 +36,7 @@
                </ul>
             </div>
 			</div>
-			<div class="flex-1 flex justify-center">
+			<div class="flex-1 flex md:justify-center">
             <div>
                <h3>Socials:</h3>
                <ul>
@@ -50,13 +50,13 @@
 
 	<div class="divider"></div>
 
-	<div class="flex">
-      <div class="w-4/12">
+	<div class="flex flex-col md:flex-row">
+      <div class="hidden md:w-4/12 md:block">
          <div class="rounded-full h-64 w-64 overflow-hidden mx-auto">
             <img class="w-auto h-full max-w-none -ml-16" src="img/om-2.jpg">
          </div>
       </div>
-      <div class="w-8/12">
+      <div class="flex-1 md:w-8/12 px-2">
             <h3>Skillset</h3>
          <div class="">
             <ul class="text-tertiary">

@@ -1,7 +1,7 @@
 window.Vue = require('vue');
 
 import store from './store';
-Vue.component('Navigation', require('./components/MainNav.vue').default);
+Vue.component('Navigation', require('./components/Navigation.vue').default);
 Vue.component('Portfolio', require('./components/Portfolio.vue').default);
 Vue.component('Featured', require('./components/FeaturedPortfolio.vue').default);
 Vue.component('Modal', require('./components/Modal.vue').default);

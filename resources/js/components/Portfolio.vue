@@ -1,7 +1,7 @@
 <template>
-  <div class="py-4 grid grid-cols-4 gap-4">
-      <div class="has-hover relative cursor-pointer shadow p-3" v-for="(item, index) in allPortfolioItems" :key='index'  @click="open(index)">
-            <div class="content-overlay absolute inset-0 bg-primary w-full h-full opacity-0 transition-all duration-200 ease-in-out"></div>
+  <div class="py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div class="has-hover relative cursor-pointer rounded shadow p-3" v-for="(item, index) in portfolioItems" :key='index'  @click="open(index)">
+            <div class="content-overlay rounded absolute inset-0 bg-primary w-full h-full opacity-0 transition-all duration-200 ease-in-out"></div>
             <img :src="'img/'+item.thumb+'.png'" />   
             <div class="-translate-y-1/2 -translate-x-1/2 content-details text-white absolute text-center px-1 opacity-0 w-full transition-all duration-300 ease-in-out">
                <p class="mb-2 text-lg font-bold">{{ item.title }}</p>
@@ -22,9 +22,10 @@ export default {
          this.openModal(index);      
       },
    },
-   computed: mapState({allPortfolioItems: state=>state.portfolioItems.portfolioItems}),
+   computed: mapState({portfolioItems: state=>state.portfolioItems.items}),
    created (){
-      this.$store.dispatch('portfolioItems/fetchPortfolioItems')
+      this.$store.dispatch('portfolioItems/fetchAll')
+      // this.updateFeatured(false)
    }
 }
 </script>

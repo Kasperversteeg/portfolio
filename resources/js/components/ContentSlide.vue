@@ -14,7 +14,7 @@ import {mapGetters, mapActions} from 'vuex';
 
 export default {
   name: `ContentSlide`,
-  props:['id', 'featured'],
+  props:['id'],
   data() {
     return { 
       transition: ``
@@ -25,8 +25,8 @@ export default {
     // Deactivate and hide the slide and
     // also activate the correct transition.
     hide(direction) {
+       console.log('HIDE'+ this.featured);
       this.transition = `ContentSlide--transition-${direction}`;
-      
        if(this.featured){
           this.hideFeatured(this.id);
        } else {
