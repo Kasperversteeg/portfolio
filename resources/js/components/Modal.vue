@@ -1,21 +1,22 @@
 <template>
   <transition name="fade">
-    <div class="fixed w-full h-screen bg-black bg-opacity-25 flex justify-center items-center" @click.self="closeModal">
-       <div class="flex flex-row flex-wrap lg:flex-no-wrap,s w-full lg:w-4/5 xl:w-3/4 items-center justify-center">
-          <div class="p-2 bg-white text-primary font-bold text-center mx-1  w-1/4 lg:w-auto rounded">
-            <button @click="prev">Vorige</button>
+    <div class="fixed w-full h-screen bg-black bg-opacity-50 flex justify-center items-center" @click.self="closeModal">
+       <div class="max-h-screen flex flex-row flex-wrap lg:flex-no-wrap,s w-full lg:w-4/5 xl:w-3/4 items-center justify-center"  @click.self="closeModal">
+          <div class="w-1/4 lg:w-auto flex justify-center" >
+            <a class="btn btn-primary" @click="prev">Vorige</a>
           </div>
-         <div class="relative bg-white rounded p-4 w-full m-1 lg:flex-1 order-first lg:order-none">
-            <div class="absolute top-0 right-0 px-4 cursor-pointer z-40" @click="closeModal">
-               <a class="text-3xl">&times</a>
+         <div class="relative bg-white rounded p-6 w-full m-1 lg:flex-1 order-first lg:order-none">
+            <div id="btn-close" class="absolute cursor-pointer select-none w-12 h-12 z-50" @click="closeModal">
+               <span class="block rounded"></span>
+               <span class="block rounded"></span>
             </div>
             <div class="relative">
                <ContentSlide v-for="(item, index) in portfolioItems" :key='index' :id='item.id' ref='visable'>
                </ContentSlide>
             </div>
          </div>
-         <div class="p-2 bg-white text-primary font-bold text-center m-1 w-1/4 lg:w-auto rounded">
-            <button @click="next">Volgende</button>
+         <div class="w-1/4 lg:w-auto flex justify-center">
+            <a class="btn btn-primary" @click="next">Volgende</a>
          </div>
        </div>
 
@@ -35,7 +36,6 @@ export default {
    methods:{
       ...mapActions('modal', ['fetchActiveIndex', 'closeModal']),
       changeItemTo(from, to) {
-         // console.log('current : ' + from + ' switching to : ' + to);
          // Find out the direction we're moving.
          // This is useful for animations.
          const direction = from < to ? `left` : `right`;
@@ -50,7 +50,6 @@ export default {
      next() {
          let nextIndex = this.activeIndex + 1; 
          if (nextIndex >= this.maxIndex){
-            console.log('changing index to 0');
             nextIndex = 0;
          };
          this.changeItemTo(this.activeIndex, nextIndex);
@@ -58,7 +57,6 @@ export default {
      prev() {
          let prevIndex = this.activeIndex - 1;
          if (prevIndex < 0){
-            console.log('changing index to maxIndex');
             prevIndex = this.maxIndex - 1;
          };
          this.changeItemTo(this.activeIndex, prevIndex);
@@ -76,7 +74,30 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+   #btn-close {
+      top: 1rem;
+      right: 1rem;
+      span {
+         transition: all .2s ease-in-out;
+         background: #36383F;
+         height: 8px;
+         margin: 4px 0;
+         &:first-child {
+            transform: rotate(45deg) translate(7px, -6px);
+            transform-origin: 0% 0%;
+         }
+         &:last-child{
+            transform-origin: 0% 100%;
+            transform: rotate(-45deg) translate(-8px, 20px);
+         }
+      }
+      &:hover {
+         span {
+            background:#AF1B1B; 
+         }
+      }
+   }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.25s ease-out;

@@ -25,7 +25,7 @@ h5 {
 }
 
 .btn {
-    @apply px-3 py-2 border-transparent border-2 font-medium rounded inline-block;
+    @apply px-3 py-2 border-transparent border-2 font-medium rounded inline-block cursor-pointer;
 }
 
 .btn-primary {
@@ -34,6 +34,13 @@ h5 {
 
 .btn-primary:hover {
     @apply bg-white text-primary border-primary;
+}
+
+.btn-dropdown {
+    @apply px-3 py-6 block text-center text-3xl font-bold;
+    &:hover {
+        @apply text-primary underline;
+    }
 }
 
 @tailwind utilities;

@@ -1,10 +1,17 @@
 <template>
   <transition :name="transition" mode="out-in">
     <div v-show="item.active">
-      <h3>{{item.title}}</h3>
-      <img :src=item.img alt="">
-      <a :href=item.url target="_blank">{{ item.url }}</a>
-      <p>{{ item.description }}</p>
+      <h3 class="text-3xl font-bold">{{item.title}}</h3>
+      <div class="shadow-lg rounded w-11/12 mx-auto relative">
+         <a :href=item.url target="_blank">
+         <div class="absolute rounded transition duration-200 ease-in bg-primary bg-opacity-0 w-full h-full hover:bg-opacity-25"></div>
+         <img  :src="'./img/'+item.img"  :alt=item.img></a>
+      </div>
+      <div class="py-3">
+         <a class="text-xl font-medium font-secondary hover:underline" :href=item.url target="_blank">{{ item.url }}</a>
+         <p class="pt-1">{{ item.description }}</p>
+      </div>
+
     </div>
   </transition>
 </template>

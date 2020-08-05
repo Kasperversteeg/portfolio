@@ -22,7 +22,7 @@ const actions = {
     closeModal({ commit, dispatch }) {
         const currentIndex = state.activeIndex;
         commit('closeModal');
-        setTimeout(() => { dispatch('portfolioItems/hideItemWithIndex', currentIndex, { root: true }) }, 200);
+        setTimeout(() => { dispatch('portfolioItems/hideItemWithIndex', currentIndex, { root: true }) }, 300);
 
     },
     fetchActiveIndex({ commit }, index) {

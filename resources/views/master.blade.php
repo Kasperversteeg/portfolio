@@ -22,7 +22,7 @@
                   <img class="w-full" src="img/kv-logo-full.svg" alt="">
                </a>
             </div>
-            <div class="self-end">
+            <div class="self-center">
                <navigation />
             </div>
          </div>

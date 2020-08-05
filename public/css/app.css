@@ -674,6 +674,7 @@ h5 {
   font-weight: 500;
   border-radius: 0.25rem;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -703,6 +704,24 @@ h5 {
   --border-opacity: 1;
   border-color: #AF1B1B;
   border-color: rgba(175, 27, 27, var(--border-opacity));
+}
+
+.btn-dropdown {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.btn-dropdown:hover {
+  --text-opacity: 1;
+  color: #AF1B1B;
+  color: rgba(175, 27, 27, var(--text-opacity));
+  text-decoration: underline;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

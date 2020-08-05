@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Seeder;
@@ -14,44 +15,44 @@ class DatabaseSeeder extends Seeder
       factory(App\PortfolioItem::class)->create([
           'title' => 'ReserV Website', 
           'url' => 'reserv-app.nl', 
-          'img' => 'reserv-img', 
+          'img' => 'no-img.png', 
           'description' => 'Reserv website omschrijving', 
-          'thumb' => 'peluche-thumb'
+          'thumb' => 'no-img.png'
         ]);
       factory(App\PortfolioItem::class)->create([
          'title' => 'ReserV Website', 
          'url' => 'reserv-app.nl', 
-         'img' => 'reserv-img', 
+         'img' => 'no-img.png', 
          'description' => 'Reserv website omschrijving', 
-         'thumb' => 'peluche-thumb'
+         'thumb' => 'no-img.png'
          ]);
       factory(App\PortfolioItem::class)->create([
          'title' => 'ReserV Website', 
          'url' => 'reserv-app.nl', 
-         'img' => 'reserv-img', 
+         'img' => 'no-img.png', 
          'description' => 'Reserv website omschrijving', 
-         'thumb' => 'peluche-thumb'
+         'thumb' => 'no-img.png'
       ]);
       factory(App\PortfolioItem::class)->create([
           'title' => 'ReserV', 
           'url' => 'reserv-app.nl/demo', 
-          'img' => 'reserv-app-img', 
+          'img' => 'reserv-app-img.png', 
           'description' => 'Reserv app omschrijving', 
-          'thumb' => 'peluche-thumb'
+          'thumb' => 'peluche-thumb.png'
         ]);
       factory(App\PortfolioItem::class)->create([
           'title' => 'Peluche', 
           'url' => 'https://www.labradoodles.it', 
-          'img' => 'peluche-img', 
+          'img' => 'peluche-img.png', 
           'description' => 'Dit is een project in opdracht van de fokker van australian labradoodles. Het idee van de website is de gebruikers de sfeer van de fokker te geven, zodat het gelijk duidelijk is om wat voor soort fokker het gaat. Het is een wordpress website met aanpassingen.', 
-          'thumb' => 'peluche-thumb'
+          'thumb' => 'peluche-thumb.png'
         ]);
       factory(App\PortfolioItem::class)->create([
           'title' => 'Pride and Joy', 
           'url' => 'https://prideandjoyaustralianlabradoodles.nl/', 
-          'img' => 'pride-img', 
+          'img' => 'pride-img.png', 
           'description' => 'Dit is een project in opdracht van de fokker van australian labradoodles. Het idee van de website is de gebruikers de sfeer van de fokker te geven, zodat het gelijk duidelijk is om wat voor soort fokker het gaat. Het is een wordpress website met aanpassingen.', 
-          'thumb' => 'pride-thumb'
+          'thumb' => 'pride-thumb.png'
         ]);
     }
 }
