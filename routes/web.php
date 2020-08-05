@@ -10,22 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('p-items', 'PortfolioItemController@index');
 Route::get('portfolio-items', 'PortfolioItemController@index');
 Route::get('featured-items', 'PortfolioItemController@featured');
 
-Route::get('/', function () {
-   return view('home');
-});
+Route::get('/', 'Controller@home');
 
-Route::get('portfolio', function () {
-    return view('portfolio');
-});
+Route::get('portfolio', 'Controller@portfolio');
 
-Route::get('service', function () {
-    return view('service');
-});
-
-Route::get('overmij', function () {
-    return view('overmij');
-});
+Route::get('overmij', 'Controller@overmij');
