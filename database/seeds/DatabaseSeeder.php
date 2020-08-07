@@ -13,32 +13,18 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       factory(App\PortfolioItem::class)->create([
-          'title' => 'ReserV Website', 
-          'url' => 'reserv-app.nl', 
-          'img' => 'no-img.png', 
-          'description' => 'Reserv website omschrijving', 
-          'thumb' => 'no-img.png'
-        ]);
-      factory(App\PortfolioItem::class)->create([
          'title' => 'ReserV Website', 
          'url' => 'reserv-app.nl', 
-         'img' => 'no-img.png', 
-         'description' => 'Reserv website omschrijving', 
-         'thumb' => 'no-img.png'
-         ]);
-      factory(App\PortfolioItem::class)->create([
-         'title' => 'ReserV Website', 
-         'url' => 'reserv-app.nl', 
-         'img' => 'no-img.png', 
-         'description' => 'Reserv website omschrijving', 
-         'thumb' => 'no-img.png'
+         'img' => 'reserv-img.png', 
+         'description' => 'De ReserV website is gemaakt als presentatie voor de applicatie zelf, het idee van de website is een soepele/simpele website die de nadruk legt op het bekijken van de demo van de app zelf. Het is een Single Page Application die volledig gemaakt is in Vue.js', 
+         'thumb' => 'reserv-thumb.png'
       ]);
       factory(App\PortfolioItem::class)->create([
-          'title' => 'ReserV', 
+          'title' => 'ReserV App', 
           'url' => 'reserv-app.nl/demo', 
           'img' => 'reserv-app-img.png', 
-          'description' => 'Reserv app omschrijving', 
-          'thumb' => 'peluche-thumb.png'
+          'description' => 'De ReserV App is een applicatie die de reserveringsregistratie van het bedrijf makkelijker en sneller maakt. De App neemt zorgt ervoor dat iedereen makkelijk reserveringen toe kan voegen en denkt mee waar dat nodig is. Deze App is gemaakt in Vue.js in combinatie met Laravel ', 
+          'thumb' => 'reserv-app-thumb.png'
         ]);
       factory(App\PortfolioItem::class)->create([
           'title' => 'Peluche', 
