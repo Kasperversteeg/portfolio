@@ -1,3 +1,4 @@
+
 import axios from 'axios';
 
 const state = {
@@ -35,7 +36,7 @@ const actions = {
         }
     },
     showItemWithIndex({ commit }, index) {
-        console.log('Showing item with index: ' + index);
+        // console.log('Showing item with index: ' + index);
         // get the object
         const activeItem = state.portfolioItems[index];
         //   update active property
@@ -44,7 +45,7 @@ const actions = {
         commit('updateActive', activeItem);
     },
     hideItemWithIndex({ commit }, index) {
-        console.log('hide item with index: ', index);
+        // console.log('hide item with index: ', index);
         const activeItem = state.portfolioItems[index];
         activeItem.active = false;
         commit('updateActive', activeItem);
@@ -52,7 +53,7 @@ const actions = {
     showItem({ commit }, id) {
         // get index from id
         const index = state.portfolioItems.findIndex(item => item.id == id);
-        console.log('Showing item with index: ' + index + ' and id: ' + id);
+        // console.log('Showing item with index: ' + index + ' and id: ' + id);
         // get the object
         const activeItem = state.portfolioItems[index];
         //   update active property
@@ -63,7 +64,7 @@ const actions = {
     hideItem({ commit }, id) {
         // get index from id
         const index = state.portfolioItems.findIndex(item => item.id === id);
-        console.log('Hiding item with index: ' + index) + ' and id: ' + id;
+        // console.log('Hiding item with index: ' + index) + ' and id: ' + id;
         // get the object
         const activeItem = state.portfolioItems[index];
         //   update active property

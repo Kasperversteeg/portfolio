@@ -1,7 +1,7 @@
 <template>
-  <div>
-     <div class="hidden md:block">
-         <ul class="h-full flex-row flex justify-end text-lg font-bold text-primary">
+  <div class="pr-4 md:pr-0 h-full flex items-center justify-end">
+     <div class="hidden h-full md:block">
+         <ul class="h-full flex-row flex justify-end text-2xl font-bold text-primary">
             <li class="border-transparent hover:border-primary border-b-4 flex items-center cursor-pointer transition ease-out duration-200"><a class="px-3 py-6" href="/">Home</a></li>
             <li class="border-transparent hover:border-primary border-b-4 flex items-center cursor-pointer transition ease-out duration-200"><a class="px-3 py-6" href="portfolio">Portfolio</a></li>
             <li class="border-transparent hover:border-primary border-b-4 flex items-center cursor-pointer transition ease-out duration-200"><a class="px-3 py-6" href="overmij">Over mij</a></li>
@@ -14,7 +14,7 @@
             <span class="w-full bg-primary rounded"></span>
          </div>
          <transition name="slideFromRight">
-            <div v-if="menuToggled" class="fixed h-full w-1/2 bg-gray-400 top-0 right-0 z-20 flex items-center">
+            <div id="toggle-btn" v-if="menuToggled" class="fixed h-full w-3/4 bg-gray-400 top-0 right-0 z-20 flex items-center">
                <ul class="w-full flex flex-col">
                   <li><a class="btn-dropdown" href="/">Home</a></li>
                   <li><a class="btn-dropdown" href="portfolio">Portfolio</a></li>
@@ -75,7 +75,8 @@ export default {
             transform: rotate(0deg) scale(0.2, 0.2);
          }
          &:nth-last-child(1){
-            transform: rotate(-45deg) translate(7px, 6px);
+    transform: rotate(-45deg) translate(9px, 4px);
+            
          }
       }
    }
@@ -83,7 +84,7 @@ export default {
        transition: all 0.5s ease-in-out;
    }
    .slideFromRight-enter, .slideFromRight-leave-to {
-      transform: translateX(384px);
+      transform: translateX(600px);
    }
    
    .slideFromRight-leave, .slideFromRight-enter-to {

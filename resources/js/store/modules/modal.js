@@ -11,12 +11,12 @@ const getters = {
 const actions = {
     openModal({ commit, dispatch }, index) {
         if (index || index === 0) {
-            console.log('opening modal with index: ' + index);
+            // console.log('opening modal with index: ' + index);
             commit('openModal', index);
             // show portfolioitem with id
             dispatch('portfolioItems/showItemWithIndex', index, { root: true });
         } else {
-            console.log('Cannot open without index');
+            // console.log('Cannot open without index');
         }
     },
     closeModal({ commit, dispatch }) {
@@ -36,7 +36,7 @@ const mutations = {
         state.activeIndex = index;
     },
     closeModal: function(state) {
-        console.log('closing modal view and resetting activeIndex');
+        // console.log('closing modal view and resetting activeIndex');
         state.activeIndex = 0;
         state.modalShowing = false;
     },

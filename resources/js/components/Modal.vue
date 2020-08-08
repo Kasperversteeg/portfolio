@@ -1,8 +1,8 @@
 <template>
   <transition name="fade">
-    <div class="fixed w-full h-screen bg-black bg-opacity-50 flex justify-center items-center" @click.self="closeModal">
+    <div class="fixed w-full h-screen bg-black bg-opacity-50 flex justify-center items-center z-50" @click.self="closeModal">
        <div class="max-h-screen flex flex-row flex-wrap lg:flex-no-wrap,s w-full lg:w-4/5 xl:w-3/4 items-center justify-center"  @click.self="closeModal">
-          <div class="w-1/4 lg:w-auto flex justify-center" >
+          <div class="w-1/4 text-2xl lg:text-xl lg:w-auto flex justify-center" >
             <a class="btn btn-primary" @click="prev">Vorige</a>
           </div>
          <div class="relative bg-white rounded p-6 w-full m-1 lg:flex-1 order-first lg:order-none">
@@ -15,7 +15,7 @@
                </ContentSlide>
             </div>
          </div>
-         <div class="w-1/4 lg:w-auto flex justify-center">
+         <div class="w-1/4 text-2xl lg:text-xl lg:w-auto flex justify-center">
             <a class="btn btn-primary" @click="next">Volgende</a>
          </div>
        </div>
@@ -89,7 +89,7 @@ export default {
          }
          &:last-child{
             transform-origin: 0% 100%;
-            transform: rotate(-45deg) translate(-8px, 20px);
+            transform: rotate(-45deg) translate(-5px, 18px);
          }
       }
       &:hover {

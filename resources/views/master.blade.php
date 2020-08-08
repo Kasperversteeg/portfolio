@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 	{{-- fonts --}}
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -8,21 +9,21 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
    <link rel="stylesheet" href="css/app.css"  />
    <!-- Scripts -->
-   <script src="{{ asset('js/app.js') }}" defer></script>
+   <script src="js/app.js" defer></script>
 	
 	<title>Kasper Versteeg - @yield('title')</title>
 </head>
 <body>
-   <div id="app" class="font-display min-h-screen h-full flex flex-col text-sm md:text-base text-text">
+   <div id="app" class="font-display min-h-screen h-full flex flex-col text-base text-text">
       {{-- navigation --}}
       <nav class="border-b px-4">
          <div class="container mx-auto flex flex-row justify-between">
-            <div class="p-1">
-               <a class="w-75 lg:w-50 " href="/">
-                  <img class="w-full" src="img/kv-logo-full.svg" alt="">
+            <div class="w-3/4 md:w-1/2 box-border">
+               <a href="/">
+                  <img class="py-4 lg:w-3/4 xl:w-1/2 " src="img/kv-logo-full.svg" alt="">
                </a>
             </div>
-            <div class="self-center">
+            <div class="min-h-full w-1/4 md:w-1/2 px-2">
                <navigation />
             </div>
          </div>

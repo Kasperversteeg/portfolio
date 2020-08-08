@@ -1,4 +1,7 @@
 @tailwind base;
+html {
+    font-size: 14px;    
+}
 h1 {
     @apply text-3xl font-bold mb-2;
 }
@@ -37,7 +40,7 @@ h5 {
 }
 
 .btn-dropdown {
-    @apply px-3 py-6 block text-center text-3xl font-bold;
+    @apply px-3 py-6 block text-center text-4xl font-bold;
     &:hover {
         @apply text-primary underline;
     }
