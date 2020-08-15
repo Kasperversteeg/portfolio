@@ -10,7 +10,7 @@
 <div class="flex flex-col md:flex-row">
    <div class="flex-shrink md:w-4/12">
          <div class="rounded-full h-64 w-64 overflow-hidden mx-auto">
-          <img class="w-auto h-full max-w-none" src="img/om-kasper.jpg">
+          <img class="w-auto h-full max-w-none" src="img/om-kasper.png">
          </div>
       </div>
       <div class="flex-none md:w-8/12 px-2">
@@ -23,29 +23,29 @@
 	<div class="divider"></div>
 
 	<div class="flex">
-			<div class="flex-1 flex md:justify-center">
-            <div>
-               <h3>Contact:</h3>		
-               <ul>
-                  <li class="p-2 hover:underline">
-                     <a href="tel:+31611119944"><icon id="tel" name="+31 6 11 11 99 44"></icon></a>
-                     </li>
-                  <li class="p-2 hover:underline">
-                     <a href="mailto:info@kasperversteeg.com"><icon id="mail" name="info@kasperversteeg.com"></icon></a>
+      <div class="flex-1 flex md:justify-center">
+         <div>
+            <h3>Contact:</h3>		
+            <ul>
+               <li class="p-2 hover:underline">
+                  <a href="tel:+31611119944"><icon id="tel" name="+31 6 11 11 99 44"></icon></a>
                   </li>
-               </ul>
-            </div>
-			</div>
-			<div class="flex-1 flex md:justify-center">
-            <div>
-               <h3>Socials:</h3>
-               <ul>
-                  <li class="p-2 hover:underline"><a href="https://www.facebook.com/kasper.versteeg.1"><icon id="facebook" name="Facebook"></icon></a></li>
-                  <li class="p-2 hover:underline"><a href="https://www.linkedin.com/in/kasper-versteeg"><icon id="linkedin" name="LinkedIn"></icon></a></li>
-                  <li class="p-2 hover:underline"><a href="https://github.com/Kasperversteeg"><icon id="github" name="Github"></icon></a></li>
-               </ul>
-            </div>
-			</div>
+               <li class="p-2 hover:underline">
+                  <a href="mailto:info@kasperversteeg.com"><icon id="mail" name="info@kasperversteeg.com"></icon></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="flex-1 flex md:justify-center">
+         <div>
+            <h3>Socials:</h3>
+            <ul>
+               <li class="p-2 hover:underline"><a href="https://www.facebook.com/kasper.versteeg.1"><icon id="facebook" name="Facebook"></icon></a></li>
+               <li class="p-2 hover:underline"><a href="https://www.linkedin.com/in/kasper-versteeg"><icon id="linkedin" name="LinkedIn"></icon></a></li>
+               <li class="p-2 hover:underline"><a href="https://github.com/Kasperversteeg"><icon id="github" name="Github"></icon></a></li>
+            </ul>
+         </div>
+      </div>
 	</div>
 
 	<div class="divider"></div>
@@ -53,7 +53,7 @@
 	<div class="flex flex-col md:flex-row">
       <div class="hidden md:w-4/12 md:block">
          <div class="rounded-full h-64 w-64 overflow-hidden mx-auto">
-            <img class="w-auto h-full max-w-none -ml-16" src="img/om-2.jpg">
+            <img class="w-auto h-full max-w-none -ml-16" src="img/om-2.png">
          </div>
       </div>
       <div class="flex-1 md:w-8/12 px-2">

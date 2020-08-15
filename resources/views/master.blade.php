@@ -14,7 +14,7 @@
 	<title>Kasper Versteeg - @yield('title')</title>
 </head>
 <body>
-   <div id="app" class="font-display min-h-screen h-full flex flex-col text-base text-text">
+   <div id="app" class="font-display min-h-screen h-full flex flex-col text-lg text-text">
       {{-- navigation --}}
       <nav class="border-b px-4">
          <div class="container mx-auto flex flex-row justify-between">
