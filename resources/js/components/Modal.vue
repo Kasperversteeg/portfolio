@@ -68,7 +68,7 @@ export default {
      },
       ...mapState({
          activeIndex: state => state.modal.activeIndex,
-         portfolioItems: state=> state.portfolioItems.items
+         portfolioItems: state=> state.portfolioItems.portfolioItems
       })
    }
 }

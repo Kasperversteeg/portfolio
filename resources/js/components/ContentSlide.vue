@@ -27,36 +27,24 @@ export default {
     };
   },
   methods: {
-     ...mapActions('portfolioItems', ['showItem', 'hideItem', 'showFeatured', 'hideFeatured']),
+     ...mapActions('portfolioItems', ['showItem', 'hideItem']),
     // Deactivate and hide the slide and
     // also activate the correct transition.
     hide(direction) {
       this.transition = `ContentSlide--transition-${direction}`;
-       if(this.featured){
-        this.hideFeatured(this.id);
-       } else {
         this.hideItem(this.id);
-       }
     },
     // Activate and show the slide and
     // also activate the correct transition.
     show(direction) {
       this.transition = `ContentSlide--transition-${direction}`;
-      if(this.featured){
-         this.showFeatured(this.id);
-      } else {
-         this.showItem(this.id);
-      }
+      this.showItem(this.id);
     },
   },
   computed:{
-     ...mapGetters('portfolioItems',['portfolioItem', 'featuredItem']),
+     ...mapGetters('portfolioItems',['portfolioItem']),
      item(){
-        if(this.featured){
-          return this.featuredItem(this.id);
-        } else {
-          return this.portfolioItem(this.id);
-        } 
+         return this.portfolioItem(this.id);
      }
   },
 };

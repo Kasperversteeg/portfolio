@@ -1,21 +1,14 @@
-
 import axios from 'axios';
 
 const state = {
-    items: [],
-    portfolioItems: [],
-    featured: []
+    portfolioItems: []
 };
 
 const getters = {
     allPortfolioItems: (state) => state.portfolioItems,
-    featuredPortfolioItems: (state) => state.featuredPortfolioItems,
     portfolioItem: (state) => (id) => {
         return state.portfolioItems.find(item => item.id === id);
-    },
-    featuredItem: (state) => (id) => {
-        return state.featured.find(item => item.id === id);
-    },
+    }
 };
 
 const actions = {
@@ -36,7 +29,6 @@ const actions = {
         }
     },
     showItemWithIndex({ commit }, index) {
-        // console.log('Showing item with index: ' + index);
         // get the object
         const activeItem = state.portfolioItems[index];
         //   update active property
@@ -81,11 +73,10 @@ const mutations = {
     },
     setPortfolioItems: function(state, portfolioItems) {
         const mappedArray = portfolioItems.map((item) => {
-            item.active = false
-            return item
+            item.active = false;
+            return item;
         });
         state.portfolioItems = mappedArray;
-        state.items = mappedArray;
     }
 };
 

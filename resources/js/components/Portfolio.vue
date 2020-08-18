@@ -22,10 +22,9 @@ export default {
          this.openModal(index);      
       },
    },
-   computed: mapState({portfolioItems: state=>state.portfolioItems.items}),
+   computed: mapState({portfolioItems: state=>state.portfolioItems.portfolioItems}),
    created (){
       this.$store.dispatch('portfolioItems/fetchAll')
-      // this.updateFeatured(false)
    }
 }
 </script>
